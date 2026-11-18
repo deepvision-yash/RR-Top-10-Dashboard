@@ -1,0 +1,955 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<title>RR Auction Intelligence | IPL 2027</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"on-error":"#ffffff","on-tertiary-fixed":"#00164d","surface-container-low":"#f2f3f8","tertiary-fixed":"#dbe1ff","on-secondary-container":"#465280","on-primary":"#ffffff","on-primary-container":"#fffbff","primary":"#b8004b","primary-container":"#e6005f","surface-container-highest":"#e1e2e7","tertiary-fixed-dim":"#b5c4ff","secondary":"#505c8b","inverse-surface":"#2e3134","surface-variant":"#e1e2e7","on-tertiary-fixed-variant":"#2d4384","on-tertiary":"#ffffff","inverse-on-surface":"#eff0f5","on-secondary-fixed-variant":"#394472","on-secondary-fixed":"#0a1844","on-primary-fixed-variant":"#900039","surface-container-lowest":"#ffffff","inverse-primary":"#ffb2be","surface-bright":"#f8f9fe","secondary-container":"#bbc7fd","tertiary-container":"#5d71b6","on-secondary":"#ffffff","on-tertiary-container":"#fefbff","primary-fixed-dim":"#ffb2be","background":"#f8f9fe","on-background":"#191c1f","surface-tint":"#bc004d","surface-container":"#edeef3","secondary-fixed":"#dce1ff","on-surface-variant":"#5c3f44","surface-dim":"#d8dadf","on-surface":"#191c1f","on-primary-fixed":"#3f0015","error":"#ba1a1a","surface":"#f8f9fe","surface-container-high":"#e7e8ed","on-error-container":"#93000a","primary-fixed":"#ffd9de","tertiary":"#44599b","outline-variant":"#e5bcc2","error-container":"#ffdad6","outline":"#906e73","secondary-fixed-dim":"#b8c4fa"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"margin-desktop":"2rem","gutter-desktop":"1.5rem","space-xs":"0.25rem","margin":"1rem","gutter":"1rem","space-md":"0.75rem","space-sm":"0.5rem","space-lg":"1.25rem","space-xl":"2rem"},"fontFamily":{"title-sm":["Manrope"],"label-xs":["Manrope"],"headline-md":["Manrope"],"display-lg-mobile":["Manrope"],"body-md":["Manrope"],"metric-headline":["Manrope"],"display-lg":["Manrope"],"headline-xl":["Manrope"],"body-lg":["Manrope"],"headline-lg":["Manrope"],"label-md":["Manrope"]},"fontSize":{"title-sm":["15px",{"lineHeight":"20px","letterSpacing":"-0.005em","fontWeight":"600"}],"label-xs":["10px",{"lineHeight":"14px","letterSpacing":"0.06em","fontWeight":"700"}],"headline-md":["18px",{"lineHeight":"24px","letterSpacing":"-0.01em","fontWeight":"600"}],"display-lg-mobile":["28px",{"lineHeight":"34px","letterSpacing":"-0.02em","fontWeight":"800"}],"body-md":["13px",{"lineHeight":"18px","fontWeight":"400"}],"metric-headline":["24px",{"lineHeight":"28px","letterSpacing":"-0.02em","fontWeight":"800"}],"display-lg":["38px",{"lineHeight":"44px","letterSpacing":"-0.03em","fontWeight":"800"}],"headline-xl":["28px",{"lineHeight":"34px","letterSpacing":"-0.02em","fontWeight":"700"}],"body-lg":["15px",{"lineHeight":"22px","fontWeight":"400"}],"headline-lg":["22px",{"lineHeight":"28px","letterSpacing":"-0.015em","fontWeight":"700"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"600"}]}}}}</script>
+<style>
+  @layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}
+  ::-webkit-scrollbar{display:none;}
+  [data-page]{display:none;}
+  [data-page].page-active{display:block;}
+</style>
+</head>
+<body class="bg-surface font-body-md text-on-surface antialiased">
+
+<!-- ===== SHARED SIDEBAR ===== -->
+<aside class="fixed left-0 top-0 h-full w-64 bg-on-secondary-fixed text-on-tertiary z-50 flex flex-col justify-between border-r border-tertiary/20 select-none">
+  <div class="flex flex-col">
+    <div class="px-space-lg pt-space-lg pb-space-md border-b border-tertiary/20">
+      <div class="flex items-center gap-space-sm">
+        <div class="w-9 h-9 rounded-lg bg-primary-container text-on-primary flex items-center justify-center shadow-lg">
+          <span class="material-symbols-outlined text-[20px]">military_tech</span>
+        </div>
+        <div>
+          <div class="font-headline-lg text-headline-md font-bold tracking-tight text-on-primary leading-none uppercase">RR AUCTION</div>
+          <div class="font-label-xs text-label-xs uppercase tracking-wider text-primary-fixed font-bold mt-space-xs">INTELLIGENCE</div>
+        </div>
+      </div>
+      <div class="mt-space-md flex items-center justify-between">
+        <span class="font-label-xs text-label-xs uppercase text-tertiary-fixed font-semibold tracking-wide">Pressure Analytics</span>
+        <span class="font-label-xs text-label-xs uppercase bg-secondary/40 text-secondary-fixed px-space-sm py-[2px] rounded-DEFAULT">IPL 2027</span>
+      </div>
+    </div>
+    <div class="px-space-md pt-space-lg">
+      <div class="px-space-sm mb-space-sm font-label-xs text-label-xs uppercase text-tertiary-fixed-dim font-bold tracking-wider">War Room Navigation</div>
+      <nav class="flex flex-col gap-space-xs">
+        <a href="#" data-nav="overview" class="nav-link flex items-center gap-space-sm px-space-md py-space-sm rounded-lg transition-all bg-primary text-on-primary font-bold shadow-md">
+          <span class="material-symbols-outlined text-[20px]">analytics</span><span>Overview</span>
+        </a>
+        <a href="#" data-nav="player-rankings" class="nav-link flex items-center gap-space-sm px-space-md py-space-sm rounded-lg font-title-sm text-title-sm text-tertiary-fixed hover:bg-secondary/40 hover:text-on-primary transition-all">
+          <span class="material-symbols-outlined text-[20px]">leaderboard</span><span>Player Rankings</span>
+        </a>
+        <a href="#" data-nav="squad-intelligence" class="nav-link flex items-center gap-space-sm px-space-md py-space-sm rounded-lg font-title-sm text-title-sm text-tertiary-fixed hover:bg-secondary/40 hover:text-on-primary transition-all">
+          <span class="material-symbols-outlined text-[20px]">groups</span><span>Squad Intelligence</span>
+        </a>
+      </nav>
+    </div>
+  </div>
+  <div class="p-space-md m-space-md bg-secondary/30 rounded-lg border border-tertiary/20 flex flex-col gap-space-xs">
+    <div class="flex items-center justify-between">
+      <span class="font-label-xs text-label-xs font-bold text-on-primary uppercase tracking-wide">Pipeline</span>
+      <span class="font-label-xs text-label-xs text-tertiary-fixed font-mono">v3.0.4</span>
+    </div>
+    <div class="font-label-xs text-label-xs text-tertiary-fixed-dim">Season: IPL 2027 Auction</div>
+    <div class="mt-space-xs pt-space-xs border-t border-tertiary/30 flex items-center justify-between">
+      <span class="font-label-xs text-label-xs uppercase font-bold text-on-primary">Round 1 Target</span>
+      <span class="inline-flex items-center gap-1 font-label-xs text-label-xs uppercase font-bold text-primary-fixed bg-primary/30 px-space-xs py-[2px] rounded-DEFAULT">
+        <span class="w-1.5 h-1.5 rounded-full bg-primary-container animate-pulse"></span>Live Locked
+      </span>
+    </div>
+  </div>
+</aside>
+
+<!-- ===== MAIN WRAPPER ===== -->
+<div class="pl-64 flex flex-col min-h-screen">
+
+  <!-- ===== SHARED HEADER ===== -->
+  <header class="fixed top-0 left-64 right-0 h-16 bg-surface-container-lowest border-b border-surface-container-high z-40 px-space-lg flex items-center justify-between shadow-[0_1px_8px_rgba(0,0,0,0.02)]">
+    <div class="flex items-center gap-space-sm font-label-md text-label-md text-secondary">
+      <span class="hover:text-on-surface cursor-pointer transition-colors" onclick="navigate('overview')">Rajasthan Royals</span>
+      <span class="text-outline-variant">/</span>
+      <span class="hover:text-on-surface cursor-pointer transition-colors">IPL 2027 Auction</span>
+      <span class="text-outline-variant">/</span>
+      <span class="font-bold text-on-surface" id="breadcrumb-current">Overview</span>
+    </div>
+    <div class="flex items-center gap-space-md">
+      <div class="hidden xl:flex items-center gap-space-sm">
+        <span class="bg-primary text-on-primary font-label-xs text-label-xs px-space-md py-space-xs rounded-full uppercase tracking-wider font-bold shadow-sm">IPL 2027 AUCTION</span>
+        <span class="border border-surface-container-highest bg-surface-container-low text-on-secondary-container font-label-xs text-label-xs px-space-sm py-space-xs rounded-lg uppercase tracking-wide font-bold">Franchise Operations</span>
+      </div>
+      <div class="h-6 w-px bg-surface-container-high hidden md:block"></div>
+      <div class="flex items-center gap-space-sm pl-space-xs">
+        <div class="flex flex-col text-right">
+          <span class="font-title-sm text-title-sm font-bold text-on-surface leading-tight">SupeRR Selector S2</span>
+          <span class="font-label-xs text-label-xs text-secondary font-semibold uppercase">Senior Analyst</span>
+        </div>
+        <div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center">
+          <span class="material-symbols-outlined text-on-primary text-[18px]">person</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="relative pt-16 bg-surface flex-1 w-full">
+
+    <!-- ========================================= -->
+    <!-- PAGE 1: OVERVIEW                          -->
+    <!-- ========================================= -->
+    <section data-page="overview" class="page-active">
+      <div class="max-w-[1440px] mx-auto p-space-lg w-full">
+        <div class="flex flex-col w-full gap-space-lg">
+
+          <!-- PAGE HEADER -->
+          <section class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md pb-space-xs">
+            <div class="flex flex-col">
+              <div class="flex items-center gap-space-xs font-label-xs text-label-xs font-bold text-primary tracking-widest uppercase mb-1">
+                <span>RAJASTHAN ROYALS</span><span class="inline-block w-1 h-1 rounded-full bg-primary"></span><span>IPL 2027 AUCTION</span>
+              </div>
+              <h1 class="font-display-lg text-display-lg font-extrabold text-on-secondary-fixed leading-tight tracking-tight">Auction Intelligence Dashboard</h1>
+              <p class="font-body-lg text-body-lg text-secondary mt-1">Data-driven player recommendations powered by high-leverage pressure analytics.</p>
+            </div>
+            <div class="flex items-center gap-space-sm self-start lg:self-center">
+              <div class="flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-primary/10 border border-primary/20 text-primary font-label-xs text-label-xs uppercase tracking-wider font-extrabold shadow-sm">
+                <span class="material-symbols-outlined text-[16px] animate-pulse">radar</span><span>IPL 2027 AUCTION ANALYSIS</span>
+              </div>
+              <div class="hidden sm:flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-surface-container-low border border-surface-container-highest font-label-xs text-label-xs font-bold text-on-secondary-fixed">
+                <span class="inline-block w-2 h-2 rounded-full bg-emerald-600"></span><span>DECISION ENGINE ONLINE</span>
+              </div>
+            </div>
+          </section>
+
+          <!-- KPI CARDS -->
+          <section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md">
+            <div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm border border-surface-container-high relative overflow-hidden flex flex-col justify-between">
+              <div class="absolute -right-4 -bottom-4 text-surface-container-low pointer-events-none opacity-40"><span class="material-symbols-outlined text-[90px]">local_fire_department</span></div>
+              <div class="flex items-center justify-between z-10">
+                <span class="font-label-xs text-label-xs uppercase tracking-wider font-bold text-secondary">Pressure Deliveries</span>
+                <span class="w-8 h-8 rounded-lg bg-primary/10 text-primary flex items-center justify-center"><span class="material-symbols-outlined text-[18px]">local_fire_department</span></span>
+              </div>
+              <div class="mt-space-md z-10">
+                <div class="font-display-lg text-display-lg font-extrabold text-on-secondary-fixed leading-none">18,290</div>
+                <div class="flex items-center gap-1 mt-2 text-primary font-label-xs text-label-xs font-bold"><span class="material-symbols-outlined text-[14px]">crisis_alert</span><span>High leverage balls (RRR ≥ 15)</span></div>
+              </div>
+            </div>
+            <div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm border border-surface-container-high relative overflow-hidden flex flex-col justify-between">
+              <div class="absolute -right-4 -bottom-4 text-surface-container-low pointer-events-none opacity-40"><span class="material-symbols-outlined text-[90px]">sports_cricket</span></div>
+              <div class="flex items-center justify-between z-10">
+                <span class="font-label-xs text-label-xs uppercase tracking-wider font-bold text-secondary">Balls Analysed</span>
+                <span class="w-8 h-8 rounded-lg bg-secondary/10 text-on-secondary-container flex items-center justify-center"><span class="material-symbols-outlined text-[18px]">sports_cricket</span></span>
+              </div>
+              <div class="mt-space-md z-10">
+                <div class="font-display-lg text-display-lg font-extrabold text-on-secondary-fixed leading-none">200,999</div>
+                <div class="flex items-center gap-1 mt-2 text-secondary font-label-xs text-label-xs font-semibold"><span class="material-symbols-outlined text-[14px]">database</span><span>T20 &amp; IPL historical data pool</span></div>
+              </div>
+            </div>
+            <div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm border border-surface-container-high relative overflow-hidden flex flex-col justify-between">
+              <div class="absolute -right-4 -bottom-4 text-surface-container-low pointer-events-none opacity-40"><span class="material-symbols-outlined text-[90px]">stadium</span></div>
+              <div class="flex items-center justify-between z-10">
+                <span class="font-label-xs text-label-xs uppercase tracking-wider font-bold text-secondary">Matches Analysed</span>
+                <span class="w-8 h-8 rounded-lg bg-tertiary-container/10 text-tertiary flex items-center justify-center"><span class="material-symbols-outlined text-[18px]">stadium</span></span>
+              </div>
+              <div class="mt-space-md z-10">
+                <div class="font-display-lg text-display-lg font-extrabold text-on-secondary-fixed leading-none">883</div>
+                <div class="flex items-center gap-1 mt-2 text-secondary font-label-xs text-label-xs font-semibold"><span class="material-symbols-outlined text-[14px]">public</span><span>Global competitive sample</span></div>
+              </div>
+            </div>
+            <div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm border border-surface-container-high relative overflow-hidden flex flex-col justify-between">
+              <div class="absolute -right-4 -bottom-4 text-surface-container-low pointer-events-none opacity-40"><span class="material-symbols-outlined text-[90px]">date_range</span></div>
+              <div class="flex items-center justify-between z-10">
+                <span class="font-label-xs text-label-xs uppercase tracking-wider font-bold text-secondary">Data Coverage</span>
+                <span class="w-8 h-8 rounded-lg bg-on-secondary-fixed/10 text-on-secondary-fixed flex items-center justify-center"><span class="material-symbols-outlined text-[18px]">history</span></span>
+              </div>
+              <div class="mt-space-md z-10">
+                <div class="font-display-lg text-display-lg font-extrabold text-on-secondary-fixed leading-none">2022–2026</div>
+                <div class="flex items-center gap-2 mt-2">
+                  <span class="px-space-xs py-[2px] rounded bg-secondary-fixed text-on-secondary-fixed font-label-xs text-label-xs font-bold uppercase tracking-wider">IPL + T20I</span>
+                  <span class="text-secondary font-label-xs text-label-xs">Weighted 2x on '25/'26</span>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- FEATURED PLAYERS -->
+          <section class="grid grid-cols-1 lg:grid-cols-2 gap-space-lg">
+            <!-- TOP BATTER -->
+            <div class="bg-surface-container-lowest rounded-xl shadow-md border-l-4 border-l-primary border-t border-r border-b border-surface-container-high p-space-xl relative overflow-hidden flex flex-col justify-between">
+              <div class="absolute top-0 right-0 w-44 h-44 bg-gradient-to-bl from-primary/5 via-transparent to-transparent pointer-events-none rounded-tr-xl"></div>
+              <div class="absolute right-6 top-8 text-surface-container-low opacity-25 pointer-events-none font-bold text-[140px] leading-none select-none font-sans">#1</div>
+              <div>
+                <div class="flex items-center justify-between gap-space-sm mb-space-md relative z-10">
+                  <div class="flex items-center gap-2">
+                    <span class="bg-primary text-on-primary font-label-xs text-label-xs uppercase font-extrabold tracking-wider px-space-md py-1 rounded">TOP BATTER</span>
+                    <span class="bg-primary/10 text-primary font-label-xs text-label-xs uppercase font-bold tracking-wide px-space-sm py-1 rounded border border-primary/20">Rank #01</span>
+                  </div>
+                  <div class="flex items-center gap-1 font-label-xs text-label-xs text-secondary font-bold uppercase tracking-wider">
+                    <span class="w-2 h-2 rounded-full bg-primary animate-ping"></span><span>Target Acquisition</span>
+                  </div>
+                </div>
+                <div class="relative z-10 mb-space-lg">
+                  <h2 class="font-headline-xl text-headline-xl font-extrabold text-on-secondary-fixed tracking-tight">Rassie van der Dussen</h2>
+                  <div class="flex items-center gap-2 mt-1">
+                    <span class="font-title-sm text-title-sm font-semibold text-secondary">Middle-order Finisher</span>
+                    <span class="w-1 h-1 rounded-full bg-outline"></span>
+                    <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-surface-container-low text-on-secondary-container font-label-xs text-label-xs font-bold uppercase"><span class="material-symbols-outlined text-[14px]">public</span>Overseas (SA)</span>
+                  </div>
+                </div>
+                <div class="p-space-md rounded-lg bg-gradient-to-r from-primary/10 via-primary/5 to-transparent border border-primary/20 flex items-center justify-between mb-space-lg relative z-10">
+                  <div>
+                    <div class="font-label-xs text-label-xs uppercase font-bold text-primary tracking-wider">Algorithmic Combined Score</div>
+                    <div class="font-title-sm text-title-sm font-bold text-on-secondary-fixed">Top Tier Leveraged Performance</div>
+                  </div>
+                  <div class="flex items-baseline gap-1 px-space-md py-space-xs rounded-lg bg-primary text-on-primary shadow-sm">
+                    <span class="font-display-lg text-display-lg font-extrabold leading-none">100.00</span>
+                    <span class="font-label-xs text-label-xs uppercase tracking-wide opacity-80">/ 100</span>
+                  </div>
+                </div>
+                <div class="grid grid-cols-3 gap-space-sm relative z-10">
+                  <div class="p-space-sm rounded-lg bg-surface-container-low border border-surface-container-high flex flex-col"><span class="font-label-xs text-label-xs uppercase font-bold text-secondary">Pressure SR</span><span class="font-headline-lg text-headline-lg font-extrabold text-primary mt-1">240.5</span><span class="font-label-xs text-label-xs text-secondary mt-0.5">League Top 0.5%</span></div>
+                  <div class="p-space-sm rounded-lg bg-surface-container-low border border-surface-container-high flex flex-col"><span class="font-label-xs text-label-xs uppercase font-bold text-secondary">Boundary %</span><span class="font-headline-lg text-headline-lg font-extrabold text-on-secondary-fixed mt-1">37.8%</span><span class="font-label-xs text-label-xs text-secondary mt-0.5">High boundary index</span></div>
+                  <div class="p-space-sm rounded-lg bg-surface-container-low border border-surface-container-high flex flex-col"><span class="font-label-xs text-label-xs uppercase font-bold text-secondary">Pressure Avg</span><span class="font-headline-lg text-headline-lg font-extrabold text-on-secondary-fixed mt-1">59.3</span><span class="font-label-xs text-label-xs text-secondary mt-0.5">Dismissals: 0.62 / inng</span></div>
+                  <div class="p-space-sm rounded-lg bg-surface-container-low border border-surface-container-high flex flex-col"><span class="font-label-xs text-label-xs uppercase font-bold text-secondary">Pressure Balls</span><span class="font-headline-lg text-headline-lg font-extrabold text-on-secondary-fixed mt-1">37</span><span class="font-label-xs text-label-xs text-secondary mt-0.5">Leveraged sample</span></div>
+                  <div class="p-space-sm rounded-lg bg-surface-container-low border border-surface-container-high flex flex-col col-span-2"><span class="font-label-xs text-label-xs uppercase font-bold text-secondary">Composite Rating</span><div class="flex items-center justify-between mt-1"><span class="font-headline-lg text-headline-lg font-extrabold text-on-secondary-fixed">94.95</span><span class="px-2 py-0.5 rounded bg-primary/10 text-primary font-label-xs text-label-xs font-bold uppercase">RR Fit 98%</span></div><div class="w-full bg-surface-container-highest rounded-full h-1.5 mt-2 overflow-hidden"><div class="bg-primary h-1.5 rounded-full" style="width:95%"></div></div></div>
+                </div>
+              </div>
+              <div class="mt-space-lg pt-space-md border-t border-surface-container-high flex items-center justify-between text-secondary font-label-xs text-label-xs">
+                <span>Strategic Role: Middle Overs Accelerant / Finisher</span>
+                <button onclick="navigate('player-rankings')" class="text-primary hover:text-on-primary-fixed font-bold inline-flex items-center gap-1 transition-colors"><span>Inspect Scouting Dossier</span><span class="material-symbols-outlined text-[14px]">arrow_forward</span></button>
+              </div>
+            </div>
+
+            <!-- TOP BOWLER -->
+            <div class="bg-surface-container-lowest rounded-xl shadow-md border-l-4 border-l-on-secondary-fixed border-t border-r border-b border-surface-container-high p-space-xl relative overflow-hidden flex flex-col justify-between">
+              <div class="absolute top-0 right-0 w-44 h-44 bg-gradient-to-bl from-secondary/10 via-transparent to-transparent pointer-events-none rounded-tr-xl"></div>
+              <div class="absolute right-6 top-8 text-surface-container-low opacity-25 pointer-events-none font-bold text-[140px] leading-none select-none font-sans">#1</div>
+              <div>
+                <div class="flex items-center justify-between gap-space-sm mb-space-md relative z-10">
+                  <div class="flex items-center gap-2">
+                    <span class="bg-on-secondary-fixed text-on-primary font-label-xs text-label-xs uppercase font-extrabold tracking-wider px-space-md py-1 rounded">TOP BOWLER</span>
+                    <span class="bg-on-secondary-fixed/10 text-on-secondary-fixed font-label-xs text-label-xs uppercase font-bold tracking-wide px-space-sm py-1 rounded border border-on-secondary-fixed/20">Rank #01</span>
+                  </div>
+                  <div class="flex items-center gap-1 font-label-xs text-label-xs text-secondary font-bold uppercase tracking-wider">
+                    <span class="w-2 h-2 rounded-full bg-secondary animate-ping"></span><span>Anchor Target</span>
+                  </div>
+                </div>
+                <div class="relative z-10 mb-space-lg">
+                  <h2 class="font-headline-xl text-headline-xl font-extrabold text-on-secondary-fixed tracking-tight">Matthew Humphreys</h2>
+                  <div class="flex items-center gap-2 mt-1">
+                    <span class="font-title-sm text-title-sm font-semibold text-secondary">Slow Left Arm Orthodox</span>
+                    <span class="w-1 h-1 rounded-full bg-outline"></span>
+                    <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-surface-container-low text-on-secondary-container font-label-xs text-label-xs font-bold uppercase"><span class="material-symbols-outlined text-[14px]">public</span>Overseas (IRE)</span>
+                  </div>
+                </div>
+                <div class="p-space-md rounded-lg bg-gradient-to-r from-secondary-fixed/50 via-secondary-fixed/20 to-transparent border border-secondary-container flex items-center justify-between mb-space-lg relative z-10">
+                  <div>
+                    <div class="font-label-xs text-label-xs uppercase font-bold text-on-secondary-fixed tracking-wider">Algorithmic Combined Score</div>
+                    <div class="font-title-sm text-title-sm font-bold text-on-secondary-fixed">Elite Defensive Choke Rating</div>
+                  </div>
+                  <div class="flex items-baseline gap-1 px-space-md py-space-xs rounded-lg bg-on-secondary-fixed text-on-primary shadow-sm">
+                    <span class="font-display-lg text-display-lg font-extrabold leading-none">100.00</span>
+                    <span class="font-label-xs text-label-xs uppercase tracking-wide opacity-80">/ 100</span>
+                  </div>
+                </div>
+                <div class="grid grid-cols-3 gap-space-sm relative z-10">
+                  <div class="p-space-sm rounded-lg bg-surface-container-low border border-surface-container-high flex flex-col"><span class="font-label-xs text-label-xs uppercase font-bold text-secondary">Pressure Econ</span><span class="font-headline-lg text-headline-lg font-extrabold text-on-secondary-fixed mt-1">4.31</span><span class="font-label-xs text-label-xs text-secondary mt-0.5">Benchmark &lt; 9.20</span></div>
+                  <div class="p-space-sm rounded-lg bg-surface-container-low border border-surface-container-high flex flex-col"><span class="font-label-xs text-label-xs uppercase font-bold text-secondary">Dot-ball %</span><span class="font-headline-lg text-headline-lg font-extrabold text-on-secondary-fixed mt-1">65.6%</span><span class="font-label-xs text-label-xs text-secondary mt-0.5">21 dots / 32 balls</span></div>
+                  <div class="p-space-sm rounded-lg bg-surface-container-low border border-surface-container-high flex flex-col"><span class="font-label-xs text-label-xs uppercase font-bold text-secondary">Pressure Wickets</span><span class="font-headline-lg text-headline-lg font-extrabold text-on-secondary-fixed mt-1">8</span><span class="font-label-xs text-label-xs text-secondary mt-0.5">SR: 4.0 balls/wkt</span></div>
+                  <div class="p-space-sm rounded-lg bg-surface-container-low border border-surface-container-high flex flex-col"><span class="font-label-xs text-label-xs uppercase font-bold text-secondary">Pressure Balls</span><span class="font-headline-lg text-headline-lg font-extrabold text-on-secondary-fixed mt-1">32</span><span class="font-label-xs text-label-xs text-secondary mt-0.5">High sample clutch</span></div>
+                  <div class="p-space-sm rounded-lg bg-surface-container-low border border-surface-container-high flex flex-col col-span-2"><span class="font-label-xs text-label-xs uppercase font-bold text-secondary">Composite Rating</span><div class="flex items-center justify-between mt-1"><span class="font-headline-lg text-headline-lg font-extrabold text-on-secondary-fixed">89.49</span><span class="px-2 py-0.5 rounded bg-secondary-fixed text-on-secondary-fixed font-label-xs text-label-xs font-bold uppercase">Sawai Mansingh Fit</span></div><div class="w-full bg-surface-container-highest rounded-full h-1.5 mt-2 overflow-hidden"><div class="bg-secondary h-1.5 rounded-full" style="width:89%"></div></div></div>
+                </div>
+              </div>
+              <div class="mt-space-lg pt-space-md border-t border-surface-container-high flex items-center justify-between text-secondary font-label-xs text-label-xs">
+                <span>Strategic Role: Middle-Overs Enforcer / Choke Specialist</span>
+                <button onclick="navigate('player-rankings')" class="text-on-secondary-fixed hover:text-primary font-bold inline-flex items-center gap-1 transition-colors"><span>Inspect Scouting Dossier</span><span class="material-symbols-outlined text-[14px]">arrow_forward</span></button>
+              </div>
+            </div>
+          </section>
+
+          <!-- TOP 5 TABLES -->
+          <section class="grid grid-cols-1 lg:grid-cols-2 gap-space-lg">
+            <div class="bg-surface-container-lowest rounded-xl shadow-sm border border-surface-container-high p-space-lg flex flex-col justify-between">
+              <div>
+                <div class="flex items-center justify-between pb-space-md border-b border-surface-container-high mb-space-md">
+                  <div class="flex items-center gap-2"><div class="w-3 h-3 rounded-full bg-primary"></div><h3 class="font-title-sm text-title-sm font-bold text-on-secondary-fixed tracking-tight uppercase">TOP 5 BATTERS</h3></div>
+                  <span class="font-label-xs text-label-xs uppercase font-bold text-secondary bg-surface-container-low px-2 py-1 rounded">Ranked by Pressure Index</span>
+                </div>
+                <div class="overflow-x-auto">
+                  <table class="w-full text-left border-collapse">
+                    <thead><tr class="bg-surface-container-low h-8"><th class="px-space-md py-1 font-label-xs text-label-xs uppercase font-bold text-secondary">Rank</th><th class="px-space-md py-1 font-label-xs text-label-xs uppercase font-bold text-secondary">Player</th><th class="px-space-md py-1 font-label-xs text-label-xs uppercase font-bold text-secondary text-right">Score</th></tr></thead>
+                    <tbody class="divide-y divide-surface-container-high">
+                      <tr class="hover:bg-surface-container-low/70 transition-colors h-11"><td class="px-space-md py-2"><span class="inline-flex items-center justify-center w-6 h-6 rounded bg-primary text-on-primary font-label-xs text-label-xs font-bold">#01</span></td><td class="px-space-md py-2 font-title-sm text-title-sm font-bold text-on-secondary-fixed">Rassie van der Dussen<span class="block text-[11px] text-secondary font-normal font-sans">SA • Middle-order</span></td><td class="px-space-md py-2 font-title-sm text-title-sm font-extrabold text-primary text-right font-mono">100.00</td></tr>
+                      <tr class="hover:bg-surface-container-low/70 transition-colors h-11"><td class="px-space-md py-2 font-label-xs text-label-xs font-bold text-secondary">#02</td><td class="px-space-md py-2 font-title-sm text-title-sm font-bold text-on-secondary-fixed">Najibullah Zadran<span class="block text-[11px] text-secondary font-normal font-sans">AFG • LHB Finisher</span></td><td class="px-space-md py-2 font-title-sm text-title-sm font-bold text-on-secondary-fixed text-right font-mono">97.67</td></tr>
+                      <tr class="hover:bg-surface-container-low/70 transition-colors h-11"><td class="px-space-md py-2 font-label-xs text-label-xs font-bold text-secondary">#03</td><td class="px-space-md py-2 font-title-sm text-title-sm font-bold text-on-secondary-fixed">Moeen Ali<span class="block text-[11px] text-secondary font-normal font-sans">ENG • Off-spin Utility</span></td><td class="px-space-md py-2 font-title-sm text-title-sm font-bold text-on-secondary-fixed text-right font-mono">95.33</td></tr>
+                      <tr class="hover:bg-surface-container-low/70 transition-colors h-11"><td class="px-space-md py-2 font-label-xs text-label-xs font-bold text-secondary">#04</td><td class="px-space-md py-2 font-title-sm text-title-sm font-bold text-on-secondary-fixed">Evin Lewis<span class="block text-[11px] text-secondary font-normal font-sans">WI • Powerplay Finisher</span></td><td class="px-space-md py-2 font-title-sm text-title-sm font-bold text-on-secondary-fixed text-right font-mono">93.00</td></tr>
+                      <tr class="hover:bg-surface-container-low/70 transition-colors h-11"><td class="px-space-md py-2 font-label-xs text-label-xs font-bold text-secondary">#05</td><td class="px-space-md py-2 font-title-sm text-title-sm font-bold text-on-secondary-fixed">Mark Chapman<span class="block text-[11px] text-secondary font-normal font-sans">NZ • Spin Slogger</span></td><td class="px-space-md py-2 font-title-sm text-title-sm font-bold text-on-secondary-fixed text-right font-mono">81.33</td></tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="mt-space-md pt-space-sm border-t border-surface-container-high flex justify-end">
+                <button onclick="navigate('player-rankings')" class="font-title-sm text-title-sm font-bold text-primary hover:text-on-primary-fixed-variant inline-flex items-center gap-1 transition-colors"><span>View All Rankings</span><span class="material-symbols-outlined text-[16px]">arrow_forward</span></button>
+              </div>
+            </div>
+            <div class="bg-surface-container-lowest rounded-xl shadow-sm border border-surface-container-high p-space-lg flex flex-col justify-between">
+              <div>
+                <div class="flex items-center justify-between pb-space-md border-b border-surface-container-high mb-space-md">
+                  <div class="flex items-center gap-2"><div class="w-3 h-3 rounded-full bg-secondary"></div><h3 class="font-title-sm text-title-sm font-bold text-on-secondary-fixed tracking-tight uppercase">TOP 5 BOWLERS</h3></div>
+                  <span class="font-label-xs text-label-xs uppercase font-bold text-secondary bg-surface-container-low px-2 py-1 rounded">Ranked by Defensive Rating</span>
+                </div>
+                <div class="overflow-x-auto">
+                  <table class="w-full text-left border-collapse">
+                    <thead><tr class="bg-surface-container-low h-8"><th class="px-space-md py-1 font-label-xs text-label-xs uppercase font-bold text-secondary">Rank</th><th class="px-space-md py-1 font-label-xs text-label-xs uppercase font-bold text-secondary">Player</th><th class="px-space-md py-1 font-label-xs text-label-xs uppercase font-bold text-secondary text-right">Score</th></tr></thead>
+                    <tbody class="divide-y divide-surface-container-high">
+                      <tr class="hover:bg-surface-container-low/70 transition-colors h-11"><td class="px-space-md py-2"><span class="inline-flex items-center justify-center w-6 h-6 rounded bg-on-secondary-fixed text-on-primary font-label-xs text-label-xs font-bold">#01</span></td><td class="px-space-md py-2 font-title-sm text-title-sm font-bold text-on-secondary-fixed">Matthew Humphreys<span class="block text-[11px] text-secondary font-normal font-sans">IRE • Left-arm orthodox</span></td><td class="px-space-md py-2 font-title-sm text-title-sm font-extrabold text-on-secondary-fixed text-right font-mono">100.00</td></tr>
+                      <tr class="hover:bg-surface-container-low/70 transition-colors h-11"><td class="px-space-md py-2 font-label-xs text-label-xs font-bold text-secondary">#02</td><td class="px-space-md py-2 font-title-sm text-title-sm font-bold text-on-secondary-fixed">Gerald Coetzee<span class="block text-[11px] text-secondary font-normal font-sans">SA • Right-arm express</span></td><td class="px-space-md py-2 font-title-sm text-title-sm font-bold text-on-secondary-fixed text-right font-mono">98.00</td></tr>
+                      <tr class="hover:bg-surface-container-low/70 transition-colors h-11"><td class="px-space-md py-2 font-label-xs text-label-xs font-bold text-secondary">#03</td><td class="px-space-md py-2 font-title-sm text-title-sm font-bold text-on-secondary-fixed">Umran Malik<span class="block text-[11px] text-secondary font-normal font-sans">IND • High Pace Enforcer</span></td><td class="px-space-md py-2 font-title-sm text-title-sm font-bold text-on-secondary-fixed text-right font-mono">92.00</td></tr>
+                      <tr class="hover:bg-surface-container-low/70 transition-colors h-11"><td class="px-space-md py-2 font-label-xs text-label-xs font-bold text-secondary">#04</td><td class="px-space-md py-2 font-title-sm text-title-sm font-bold text-on-secondary-fixed">Taskin Ahmed<span class="block text-[11px] text-secondary font-normal font-sans">BAN • Heavy ball seamer</span></td><td class="px-space-md py-2 font-title-sm text-title-sm font-bold text-on-secondary-fixed text-right font-mono">90.00</td></tr>
+                      <tr class="hover:bg-surface-container-low/70 transition-colors h-11"><td class="px-space-md py-2 font-label-xs text-label-xs font-bold text-secondary">#05</td><td class="px-space-md py-2 font-title-sm text-title-sm font-bold text-on-secondary-fixed">Barry McCarthy<span class="block text-[11px] text-secondary font-normal font-sans">IRE • Hard length pace</span></td><td class="px-space-md py-2 font-title-sm text-title-sm font-bold text-on-secondary-fixed text-right font-mono">86.00</td></tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="mt-space-md pt-space-sm border-t border-surface-container-high flex justify-end">
+                <button onclick="navigate('player-rankings')" class="font-title-sm text-title-sm font-bold text-secondary hover:text-on-secondary-fixed inline-flex items-center gap-1 transition-colors"><span>View All Rankings</span><span class="material-symbols-outlined text-[16px]">arrow_forward</span></button>
+              </div>
+            </div>
+          </section>
+
+          <!-- INSIGHTS -->
+          <section class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+            <div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm border border-surface-container-high flex flex-col justify-between relative overflow-hidden">
+              <div class="w-1.5 h-full bg-primary absolute left-0 top-0"></div>
+              <div><div class="flex items-center justify-between mb-space-sm pl-2"><span class="font-label-xs text-label-xs uppercase font-extrabold text-primary bg-primary/10 px-2 py-0.5 rounded border border-primary/20">Retention Value</span><span class="font-label-xs text-label-xs font-bold text-secondary">Insight #01</span></div><h4 class="font-title-sm text-title-sm font-bold text-on-secondary-fixed pl-2 tracking-tight">ELITE INDIAN BATTING RETENTION</h4><p class="font-body-md text-body-md text-secondary mt-space-xs pl-2">Dhruv Jurel, Shubham Dubey and Donovan Ferreira rank within the top 12 of the batting candidate pool under steep run chases.</p></div>
+              <div class="mt-space-md pt-space-sm border-t border-surface-container-high flex items-center justify-between pl-2"><span class="font-label-xs text-label-xs font-semibold text-secondary">Recommended: Core Retention Tier</span><span class="material-symbols-outlined text-primary text-[18px]">verified</span></div>
+            </div>
+            <div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm border border-surface-container-high flex flex-col justify-between relative overflow-hidden">
+              <div class="w-1.5 h-full bg-secondary absolute left-0 top-0"></div>
+              <div><div class="flex items-center justify-between mb-space-sm pl-2"><span class="font-label-xs text-label-xs uppercase font-extrabold text-on-secondary-fixed bg-secondary-fixed/60 px-2 py-0.5 rounded border border-secondary-container">Auction Target</span><span class="font-label-xs text-label-xs font-bold text-secondary">Insight #02</span></div><h4 class="font-title-sm text-title-sm font-bold text-on-secondary-fixed pl-2 tracking-tight">INDIAN PACE REQUIREMENT</h4><p class="font-body-md text-body-md text-secondary mt-space-xs pl-2">Umran Malik and Akash Madhwal provide high-velocity Indian fast-bowling auction options with superior dot-ball ratios.</p></div>
+              <div class="mt-space-md pt-space-sm border-t border-surface-container-high flex items-center justify-between pl-2"><span class="font-label-xs text-label-xs font-semibold text-secondary">Target Purse Cap: ₹6.50 Cr</span><span class="material-symbols-outlined text-secondary text-[18px]">bolt</span></div>
+            </div>
+            <div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm border border-surface-container-high flex flex-col justify-between relative overflow-hidden">
+              <div class="w-1.5 h-full bg-emerald-600 absolute left-0 top-0"></div>
+              <div><div class="flex items-center justify-between mb-space-sm pl-2"><span class="font-label-xs text-label-xs uppercase font-extrabold text-emerald-800 bg-emerald-100 px-2 py-0.5 rounded">Clutch Metric</span><span class="font-label-xs text-label-xs font-bold text-secondary">Insight #03</span></div><h4 class="font-title-sm text-title-sm font-bold text-on-secondary-fixed pl-2 tracking-tight">PRESSURE-TESTED SPIN OPTION</h4><p class="font-body-md text-body-md text-secondary mt-space-xs pl-2">Matthew Humphreys leads the recommended bowling rankings with an extraordinary 4.31 pressure economy and 65.6% dot ball percentage.</p></div>
+              <div class="mt-space-md pt-space-sm border-t border-surface-container-high flex items-center justify-between pl-2"><span class="font-label-xs text-label-xs font-semibold text-secondary">Tactical Value: Under-the-radar Steal</span><span class="material-symbols-outlined text-emerald-700 text-[18px]">trending_up</span></div>
+            </div>
+          </section>
+
+          <!-- METHODOLOGY -->
+          <section class="bg-surface-container-lowest rounded-xl shadow-sm border border-surface-container-high p-space-lg">
+            <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-lg">
+              <div class="flex-1">
+                <div class="flex items-center gap-space-sm mb-space-xs">
+                  <span class="w-7 h-7 rounded-md bg-secondary/10 text-on-secondary-fixed flex items-center justify-center"><span class="material-symbols-outlined text-[18px]">functions</span></span>
+                  <h3 class="font-headline-md text-headline-md font-bold text-on-secondary-fixed">How Pressure Analytics Works</h3>
+                  <span class="font-label-xs text-label-xs font-mono font-bold uppercase bg-surface-container-high text-secondary px-space-xs py-[2px] rounded">Methodology v3.2</span>
+                </div>
+                <p class="font-body-md text-body-md text-secondary max-w-3xl">The proprietary RR Pressure Analytics model isolates match-defining situations where single-ball leverage shifts win probabilities by &gt;4.5%.</p>
+                <div class="flex flex-wrap items-center gap-space-xs mt-space-md">
+                  <div class="inline-flex items-center gap-1.5 px-space-sm py-1 rounded bg-surface-container-low border border-surface-container-high font-label-xs text-label-xs font-bold text-on-secondary-container"><span class="material-symbols-outlined text-[14px] text-primary">filter_2</span><span>Second innings only</span></div>
+                  <div class="inline-flex items-center gap-1.5 px-space-sm py-1 rounded bg-surface-container-low border border-surface-container-high font-label-xs text-label-xs font-bold text-on-secondary-container"><span class="material-symbols-outlined text-[14px] text-primary">speed</span><span>Required Run Rate ≥ 15.0</span></div>
+                  <div class="inline-flex items-center gap-1.5 px-space-sm py-1 rounded bg-surface-container-low border border-surface-container-high font-label-xs text-label-xs font-bold text-on-secondary-container"><span class="material-symbols-outlined text-[14px] text-primary">groups</span><span>≥ 3 wickets fallen</span></div>
+                  <div class="inline-flex items-center gap-1.5 px-space-sm py-1 rounded bg-surface-container-low border border-surface-container-high font-label-xs text-label-xs font-bold text-on-secondary-container"><span class="material-symbols-outlined text-[14px] text-secondary">balance</span><span>Recency: '25–'26 (2×), '24 (1.5×), '22–'23 (1×)</span></div>
+                  <div class="inline-flex items-center gap-1.5 px-space-sm py-1 rounded bg-surface-container-low border border-surface-container-high font-label-xs text-label-xs font-bold text-on-secondary-container"><span class="material-symbols-outlined text-[14px] text-secondary">hub</span><span>Composite score + RR Squad Fit index</span></div>
+                </div>
+              </div>
+              <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-space-sm shrink-0">
+                <button onclick="navigate('player-rankings')" class="px-space-lg py-space-md rounded-lg bg-primary hover:bg-on-primary-fixed-variant text-on-primary font-title-sm text-title-sm font-bold inline-flex items-center justify-center gap-2 shadow-md transition-all active:scale-[0.98]"><span>Explore Player Rankings</span><span class="material-symbols-outlined text-[18px]">arrow_forward</span></button>
+              </div>
+            </div>
+          </section>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================= -->
+    <!-- PAGE 2: PLAYER RANKINGS                   -->
+    <!-- ========================================= -->
+    <section data-page="player-rankings">
+      <div class="flex flex-col w-full">
+        <!-- Hero -->
+        <div class="px-8 pt-space-lg pb-space-md bg-surface-container-lowest shadow-sm">
+          <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-md">
+            <div>
+              <div class="flex items-center gap-space-xs text-primary font-label-xs text-label-xs uppercase tracking-widest font-bold"><span class="material-symbols-outlined text-[16px]">stacked_line_chart</span><span>Player Evaluation • Pressure Analytics</span></div>
+              <h1 class="font-headline-xl text-headline-xl font-extrabold text-on-surface mt-space-xs tracking-tight">Auction Player Rankings</h1>
+              <p class="font-body-md text-body-md text-secondary mt-1 max-w-2xl">Top 10 batters and top 10 bowlers ranked using clutch index algorithms, extreme pressure strike rates, and Rajasthan Royals strategic roster balance.</p>
+            </div>
+            <div class="flex items-center gap-space-sm self-start lg:self-center">
+              <div class="flex items-center gap-2 px-space-md py-space-xs rounded-xl bg-primary-fixed/30 text-on-primary-fixed-variant shadow-sm"><span class="material-symbols-outlined text-[16px] text-primary">verified</span><span class="font-label-xs text-label-xs font-bold uppercase tracking-wider">20 Recommended Targets</span></div>
+              <div class="flex items-center gap-2 px-space-md py-space-xs rounded-xl bg-surface-container-high text-on-surface font-label-xs text-label-xs font-bold uppercase tracking-wider"><span class="w-2 h-2 rounded-full bg-primary animate-ping"></span><span>Decision Engine Live</span></div>
+            </div>
+          </div>
+          <!-- Stats strip -->
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-space-md mt-space-lg pt-space-md bg-surface-container-low p-space-md rounded-xl">
+            <div class="flex items-center gap-space-md"><div class="w-10 h-10 rounded-lg bg-surface-container-lowest text-primary flex items-center justify-center shadow-sm"><span class="material-symbols-outlined text-[20px]">bolt</span></div><div><div class="font-label-xs text-label-xs uppercase text-secondary font-bold">Max Pressure SR</div><div class="font-metric-headline text-metric-headline font-bold text-on-surface">240.5</div></div></div>
+            <div class="flex items-center gap-space-md"><div class="w-10 h-10 rounded-lg bg-surface-container-lowest text-primary flex items-center justify-center shadow-sm"><span class="material-symbols-outlined text-[20px]">shield</span></div><div><div class="font-label-xs text-label-xs uppercase text-secondary font-bold">Choke Dot % Peak</div><div class="font-metric-headline text-metric-headline font-bold text-on-surface">65.6%</div></div></div>
+            <div class="flex items-center gap-space-md"><div class="w-10 h-10 rounded-lg bg-surface-container-lowest text-primary flex items-center justify-center shadow-sm"><span class="material-symbols-outlined text-[20px]">trending_down</span></div><div><div class="font-label-xs text-label-xs uppercase text-secondary font-bold">Min Pressure Econ</div><div class="font-metric-headline text-metric-headline font-bold text-on-surface">4.31</div></div></div>
+            <div class="flex items-center gap-space-md"><div class="w-10 h-10 rounded-lg bg-surface-container-lowest text-secondary flex items-center justify-center shadow-sm"><span class="material-symbols-outlined text-[20px]">calculate</span></div><div><div class="font-label-xs text-label-xs uppercase text-secondary font-bold">Fit Calibration</div><div class="font-metric-headline text-metric-headline font-bold text-on-surface">94.95%</div></div></div>
+          </div>
+        </div>
+
+        <!-- Controls -->
+        <div class="px-8 py-space-lg flex flex-col gap-space-lg">
+          <div class="flex flex-col xl:flex-row items-stretch xl:items-center justify-between gap-space-md bg-surface-container-lowest p-space-md rounded-xl shadow-sm">
+            <div class="inline-flex p-1 rounded-xl bg-surface-container">
+              <button class="flex items-center gap-2 px-space-lg py-2 rounded-lg font-title-sm text-title-sm font-bold transition-all bg-primary text-on-primary shadow-md" id="tab-batters" onclick="switchCategory('batters')"><span class="material-symbols-outlined text-[18px]">sports_cricket</span><span>BATTERS (10)</span></button>
+              <button class="flex items-center gap-2 px-space-lg py-2 rounded-lg font-title-sm text-title-sm font-semibold transition-all text-secondary hover:text-on-surface" id="tab-bowlers" onclick="switchCategory('bowlers')"><span class="material-symbols-outlined text-[18px]">sports_baseball</span><span>BOWLERS (10)</span></button>
+            </div>
+            <div class="flex flex-wrap items-center gap-space-sm">
+              <div class="relative min-w-[220px] flex-1 sm:flex-initial"><span class="material-symbols-outlined absolute left-2.5 top-1/2 -translate-y-1/2 text-secondary text-[18px]">search</span><input class="w-full pl-9 pr-3 py-1.5 bg-surface-container-low rounded-lg font-body-md text-body-md text-on-surface placeholder-secondary focus:outline-none focus:bg-surface-container-lowest transition-all" id="player-search" oninput="applyFilters()" placeholder="Search player by name..." type="text"/></div>
+              <div class="inline-flex p-1 rounded-lg bg-surface-container-low text-secondary font-label-md text-label-md">
+                <button class="px-space-sm py-1 rounded-md font-bold bg-surface-container-lowest text-on-surface shadow-xs transition-colors" id="nat-all" onclick="setNationality('all')">All</button>
+                <button class="px-space-sm py-1 rounded-md font-medium hover:text-on-surface transition-colors" id="nat-Indian" onclick="setNationality('Indian')">Indian</button>
+                <button class="px-space-sm py-1 rounded-md font-medium hover:text-on-surface transition-colors" id="nat-Overseas" onclick="setNationality('Overseas')">Overseas</button>
+              </div>
+              <div class="relative"><select class="appearance-none pl-3 pr-8 py-1.5 bg-surface-container-low rounded-lg font-label-md text-label-md font-bold text-on-surface cursor-pointer focus:outline-none" id="role-filter" onchange="applyFilters()"><option value="all">All Tactical Roles</option><option value="Finisher">Finishers</option><option value="Opener">Openers</option><option value="All-rounder">All-Rounders</option><option value="Fast Bowler">Fast Bowlers</option><option value="Spin Bowler">Spin Specialists</option></select><span class="material-symbols-outlined absolute right-2 top-1/2 -translate-y-1/2 text-secondary pointer-events-none text-[16px]">expand_more</span></div>
+              <div class="relative"><select class="appearance-none pl-3 pr-8 py-1.5 bg-surface-container-low rounded-lg font-label-md text-label-md font-bold text-on-surface cursor-pointer focus:outline-none" id="sort-selector" onchange="applyFilters()"><option value="score">Sort: Auction Score</option><option value="composite">Sort: Composite Score</option><option value="balls">Sort: Pressure Balls</option></select><span class="material-symbols-outlined absolute right-2 top-1/2 -translate-y-1/2 text-secondary pointer-events-none text-[16px]">swap_vert</span></div>
+              <button class="px-space-sm py-1.5 rounded-lg bg-surface-container-low text-secondary hover:text-primary hover:bg-surface-container font-label-xs text-label-xs uppercase font-bold tracking-wider transition-colors flex items-center gap-1" onclick="clearAllFilters()"><span class="material-symbols-outlined text-[14px]">refresh</span><span>Reset</span></button>
+            </div>
+          </div>
+          <div class="flex items-center justify-between text-secondary font-label-xs text-label-xs uppercase tracking-wider px-space-xs">
+            <div class="flex items-center gap-space-sm"><span>Displaying:</span><span class="font-bold text-primary" id="active-category-label">Top 10 Batters</span><span>•</span><span class="font-bold text-on-surface" id="filtered-count">10 of 10 matches</span></div>
+            <div class="flex items-center gap-2 text-secondary"><span class="w-1.5 h-1.5 rounded-full bg-primary"></span><span>Click player row for granular dossier</span></div>
+          </div>
+
+          <!-- Table -->
+          <div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden">
+            <div class="overflow-x-auto">
+              <table class="w-full text-left font-body-md text-body-md select-none" id="player-table">
+                <thead class="bg-surface-container-low font-label-xs text-label-xs uppercase tracking-wider text-secondary font-bold" id="table-head"></thead>
+                <tbody class="divide-y-0" id="table-body"></tbody>
+              </table>
+            </div>
+            <div class="hidden p-space-xl flex-col items-center justify-center text-center" id="empty-state">
+              <div class="w-12 h-12 rounded-full bg-surface-container-high text-secondary flex items-center justify-center mb-space-sm"><span class="material-symbols-outlined text-[24px]">filter_list_off</span></div>
+              <div class="font-headline-md text-headline-md font-bold text-on-surface">No targets match filters</div>
+              <p class="font-body-md text-body-md text-secondary mt-1">Try resetting filters to see the Top 10 pool.</p>
+              <button class="mt-space-md px-space-md py-space-xs rounded-lg bg-primary text-on-primary font-label-xs text-label-xs font-bold uppercase tracking-wider" onclick="clearAllFilters()">Reset All Filters</button>
+            </div>
+          </div>
+
+          <!-- Footer -->
+          <div class="bg-surface-container-low rounded-xl p-space-lg flex flex-col md:flex-row items-start md:items-center justify-between gap-space-md">
+            <div class="flex items-start gap-space-sm"><div class="w-8 h-8 rounded-lg bg-surface-container-lowest text-primary flex items-center justify-center shadow-xs"><span class="material-symbols-outlined text-[18px]">verified_user</span></div><div><div class="font-label-xs text-label-xs uppercase font-bold text-on-surface">Ranking Methodology &amp; RR Valuation Fit</div><div class="font-body-md text-body-md text-secondary mt-0.5">Pressure Performance Score + Composite Clutch Index + Rajasthan Royals SMS Venue Profile Calibration.</div></div></div>
+            <div class="flex items-center gap-space-lg font-label-xs text-label-xs uppercase tracking-wider text-secondary"><div><strong class="text-on-surface">Data Coverage:</strong> IPL &amp; T20I (2022–2026)</div><div class="hidden sm:block">•</div><div><strong class="text-on-surface">Weights:</strong> 2× Recency Multiplier on 2025–'26</div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================= -->
+    <!-- PAGE 3: SQUAD INTELLIGENCE                -->
+    <!-- ========================================= -->
+    <section data-page="squad-intelligence">
+      <div class="flex flex-col w-full">
+        <!-- Header -->
+        <div class="px-8 py-space-lg bg-surface-container-lowest border-b border-surface-container-high shadow-sm">
+          <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+            <div class="flex flex-col">
+              <div class="flex items-center gap-space-xs font-label-xs text-label-xs uppercase tracking-wider text-primary font-bold mb-space-xs"><span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span><span>RAJASTHAN ROYALS • SQUAD ANALYSIS</span><span class="text-outline-variant">•</span><span class="text-secondary">WAR ROOM DIRECTIVE</span></div>
+              <h1 class="font-display-lg text-headline-xl lg:text-display-lg text-on-surface font-extrabold tracking-tight">RR Squad Intelligence</h1>
+              <p class="font-body-md text-body-md text-secondary mt-space-xs">Retained Core + Recommended Auction Targets | Holistic Squad Composition &amp; Pressure Metrics</p>
+            </div>
+            <span class="inline-flex items-center gap-space-xs bg-primary text-on-primary px-space-md py-space-sm rounded-lg font-label-xs text-label-xs font-bold uppercase tracking-wider shadow-sm self-start"><span class="material-symbols-outlined text-[16px]">sports_cricket</span>IPL 2027 SQUAD STRATEGY</span>
+          </div>
+        </div>
+
+        <div class="px-8 py-space-lg flex flex-col gap-space-xl">
+          <!-- KPI CARDS -->
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+            <div class="bg-surface-container-lowest rounded-xl p-space-lg border border-surface-container-high shadow-sm flex flex-col justify-between relative overflow-hidden"><div class="absolute -right-6 -bottom-6 w-24 h-24 rounded-full bg-secondary/5 pointer-events-none"></div><div><div class="flex items-center justify-between mb-space-sm"><span class="font-label-xs text-label-xs uppercase tracking-wider text-secondary font-bold">Base Continuity</span><span class="px-space-sm py-[2px] rounded font-label-xs text-label-xs font-bold bg-on-secondary-fixed text-on-primary uppercase tracking-wide">FRANCHISE CORE</span></div><div class="font-headline-lg text-headline-lg text-on-surface font-extrabold flex items-baseline gap-space-xs"><span>8</span><span class="text-body-md font-semibold text-secondary">Secured Players</span></div><div class="font-title-sm text-title-sm text-on-secondary-fixed mt-space-xs font-bold">Retained RR Core</div></div><div class="mt-space-md pt-space-sm border-t border-surface-container-low flex items-center justify-between text-body-md text-secondary"><span>Pre-auction foundation across all roles</span><span class="material-symbols-outlined text-[18px] text-secondary">shield</span></div></div>
+            <div class="bg-surface-container-lowest rounded-xl p-space-lg border border-surface-container-high shadow-sm flex flex-col justify-between relative overflow-hidden"><div class="absolute -right-6 -bottom-6 w-24 h-24 rounded-full bg-primary/5 pointer-events-none"></div><div><div class="flex items-center justify-between mb-space-sm"><span class="font-label-xs text-label-xs uppercase tracking-wider text-primary font-bold">Attack Infiltration</span><span class="px-space-sm py-[2px] rounded font-label-xs text-label-xs font-bold bg-primary text-on-primary uppercase tracking-wide">TARGET SLATE</span></div><div class="font-headline-lg text-headline-lg text-primary font-extrabold flex items-baseline gap-space-xs"><span>10</span><span class="text-body-md font-semibold text-on-surface-variant">Auction Targets</span></div><div class="font-title-sm text-title-sm text-on-surface font-bold mt-space-xs">Recommended Batters</div></div><div class="mt-space-md pt-space-sm border-t border-surface-container-low flex items-center justify-between text-body-md text-secondary"><span>High-pressure strike rates &amp; finisher depth</span><span class="material-symbols-outlined text-[18px] text-primary">bolt</span></div></div>
+            <div class="bg-surface-container-lowest rounded-xl p-space-lg border border-surface-container-high shadow-sm flex flex-col justify-between relative overflow-hidden"><div class="absolute -right-6 -bottom-6 w-24 h-24 rounded-full bg-tertiary/5 pointer-events-none"></div><div><div class="flex items-center justify-between mb-space-sm"><span class="font-label-xs text-label-xs uppercase tracking-wider text-tertiary font-bold">Defensive Strangle</span><span class="px-space-sm py-[2px] rounded font-label-xs text-label-xs font-bold bg-tertiary text-on-tertiary uppercase tracking-wide">CHOKE VALUE</span></div><div class="font-headline-lg text-headline-lg text-tertiary font-extrabold flex items-baseline gap-space-xs"><span>10</span><span class="text-body-md font-semibold text-on-surface-variant">Auction Targets</span></div><div class="font-title-sm text-title-sm text-on-surface font-bold mt-space-xs">Recommended Bowlers</div></div><div class="mt-space-md pt-space-sm border-t border-surface-container-low flex items-center justify-between text-body-md text-secondary"><span>Choke dot-ball % &amp; death-overs economy</span><span class="material-symbols-outlined text-[18px] text-tertiary">target</span></div></div>
+          </div>
+
+          <!-- SQUAD ROLE COVERAGE TABLE -->
+          <div class="bg-surface-container-lowest rounded-xl border border-surface-container-high shadow-sm overflow-hidden">
+            <div class="p-space-lg border-b border-surface-container-high flex flex-col md:flex-row md:items-center justify-between gap-space-sm">
+              <div><div class="flex items-center gap-space-xs"><span class="font-title-sm text-title-sm text-on-surface font-bold">Squad Composition &amp; Auction Fit</span><span class="font-label-xs text-label-xs uppercase bg-secondary-fixed text-on-secondary-fixed px-space-xs py-[2px] rounded font-bold">Matrix View</span></div><p class="font-body-md text-body-md text-secondary mt-1">Mapping 8 retained franchise assets against 20 prioritized auction targets across 9 tactical roles</p></div>
+              <div class="flex items-center gap-space-md text-label-xs font-label-xs uppercase"><div class="flex items-center gap-space-xs"><span class="w-3 h-3 rounded bg-on-secondary-fixed"></span><span class="text-on-surface font-bold">Retained RR Core</span></div><div class="flex items-center gap-space-xs"><span class="w-3 h-3 rounded border border-primary bg-primary-fixed/40"></span><span class="text-primary font-bold">Auction Recommended</span></div></div>
+            </div>
+            <div class="overflow-x-auto">
+              <table class="w-full text-left border-collapse">
+                <thead><tr class="bg-surface-container-low text-secondary font-label-xs text-label-xs uppercase tracking-wider border-b border-surface-container-high"><th class="py-space-sm px-space-lg w-1/4 font-bold">Squad Tactical Role</th><th class="py-space-sm px-space-lg w-3/8 font-bold">Retained Core (Secured)</th><th class="py-space-sm px-space-lg w-3/8 font-bold">Recommended Auction Targets</th></tr></thead>
+                <tbody class="divide-y divide-surface-container font-body-md text-body-md" id="role-table-body">
+                  <tr class="hover:bg-surface-container-low/50 transition-colors"><td class="py-space-md px-space-lg font-title-sm text-title-sm font-bold text-on-surface">Opening Batter</td><td class="py-space-md px-space-lg"><div class="flex flex-wrap gap-space-xs"><span class="inline-flex items-center gap-1.5 px-space-sm py-1 rounded bg-on-secondary-fixed text-on-primary font-label-md text-label-md font-semibold"><span class="material-symbols-outlined text-[14px] text-tertiary-fixed">verified</span>Yashasvi Jaiswal</span></div></td><td class="py-space-md px-space-lg"><div class="flex flex-wrap gap-space-xs"><span class="inline-flex items-center gap-1.5 px-space-sm py-1 rounded border border-primary/40 bg-primary/5 text-on-surface font-label-md text-label-md font-medium"><span class="font-bold text-primary font-mono text-[11px]">#04</span>Evin Lewis</span><span class="inline-flex items-center gap-1.5 px-space-sm py-1 rounded border border-primary/40 bg-primary/5 text-on-surface font-label-md text-label-md font-medium"><span class="font-bold text-primary font-mono text-[11px]">#08</span>Reeza Hendricks</span></div></td></tr>
+                  <tr class="hover:bg-surface-container-low/50 transition-colors"><td class="py-space-md px-space-lg font-title-sm text-title-sm font-bold text-on-surface">Top-order Batter</td><td class="py-space-md px-space-lg"><div class="flex flex-wrap gap-space-xs"><span class="inline-flex items-center gap-1.5 px-space-sm py-1 rounded bg-on-secondary-fixed text-on-primary font-label-md text-label-md font-semibold"><span class="material-symbols-outlined text-[14px] text-tertiary-fixed">verified</span>Riyan Parag</span></div></td><td class="py-space-md px-space-lg"><div class="flex flex-wrap gap-space-xs"><span class="inline-flex items-center gap-1.5 px-space-sm py-1 rounded border border-primary/40 bg-primary/5 text-on-surface font-label-md text-label-md font-medium"><span class="font-bold text-primary font-mono text-[11px]">#05</span>Mark Chapman</span></div></td></tr>
+                  <tr class="hover:bg-surface-container-low/50 transition-colors"><td class="py-space-md px-space-lg font-title-sm text-title-sm font-bold text-on-surface">Middle-order Finisher</td><td class="py-space-md px-space-lg"><div class="flex flex-wrap gap-space-xs"><span class="inline-flex items-center gap-1.5 px-space-sm py-1 rounded bg-on-secondary-fixed text-on-primary font-label-md text-label-md font-semibold"><span class="material-symbols-outlined text-[14px] text-tertiary-fixed">verified</span>Dhruv Jurel</span><span class="inline-flex items-center gap-1.5 px-space-sm py-1 rounded bg-on-secondary-fixed text-on-primary font-label-md text-label-md font-semibold"><span class="material-symbols-outlined text-[14px] text-tertiary-fixed">verified</span>Shubham Dubey</span><span class="inline-flex items-center gap-1.5 px-space-sm py-1 rounded bg-on-secondary-fixed text-on-primary font-label-md text-label-md font-semibold"><span class="material-symbols-outlined text-[14px] text-tertiary-fixed">verified</span>Donovan Ferreira</span></div></td><td class="py-space-md px-space-lg"><div class="flex flex-wrap gap-space-xs"><span class="inline-flex items-center gap-1.5 px-space-sm py-1 rounded border border-primary/40 bg-primary/5 text-on-surface font-label-md text-label-md font-medium"><span class="font-bold text-primary font-mono text-[11px]">#01</span>Rassie van der Dussen</span><span class="inline-flex items-center gap-1.5 px-space-sm py-1 rounded border border-primary/40 bg-primary/5 text-on-surface font-label-md text-label-md font-medium"><span class="font-bold text-primary font-mono text-[11px]">#03</span>Moeen Ali</span></div></td></tr>
+                  <tr class="hover:bg-surface-container-low/50 transition-colors"><td class="py-space-md px-space-lg font-title-sm text-title-sm font-bold text-on-surface">Lower-order Hitter</td><td class="py-space-md px-space-lg"><div class="flex flex-wrap gap-space-xs"><span class="inline-flex items-center gap-1.5 px-space-sm py-1 rounded bg-on-secondary-fixed text-on-primary font-label-md text-label-md font-semibold"><span class="material-symbols-outlined text-[14px] text-tertiary-fixed">verified</span>Ravindra Jadeja</span><span class="inline-flex items-center gap-1.5 px-space-sm py-1 rounded bg-on-secondary-fixed text-on-primary font-label-md text-label-md font-semibold"><span class="material-symbols-outlined text-[14px] text-tertiary-fixed">verified</span>Dasun Shanaka</span></div></td><td class="py-space-md px-space-lg"><div class="flex flex-wrap gap-space-xs"><span class="inline-flex items-center gap-1.5 px-space-sm py-1 rounded border border-primary/40 bg-primary/5 text-on-surface font-label-md text-label-md font-medium"><span class="font-bold text-primary font-mono text-[11px]">#02</span>Najibullah Zadran</span></div></td></tr>
+                  <tr class="hover:bg-surface-container-low/50 transition-colors"><td class="py-space-md px-space-lg font-title-sm text-title-sm font-bold text-on-surface">Indian Finisher</td><td class="py-space-md px-space-lg"><div class="flex flex-wrap gap-space-xs"><span class="inline-flex items-center gap-1.5 px-space-sm py-1 rounded bg-on-secondary-fixed text-on-primary font-label-md text-label-md font-semibold"><span class="material-symbols-outlined text-[14px] text-tertiary-fixed">verified</span>Shubham Dubey</span></div></td><td class="py-space-md px-space-lg"><div class="flex flex-wrap gap-space-xs"><span class="inline-flex items-center gap-1.5 px-space-sm py-1 rounded border border-primary/40 bg-primary/5 text-on-surface font-label-md text-label-md font-medium"><span class="font-bold text-primary font-mono text-[11px]">#06</span>Mahipal Lomror</span></div></td></tr>
+                  <tr class="hover:bg-surface-container-low/50 transition-colors"><td class="py-space-md px-space-lg font-title-sm text-title-sm font-bold text-on-surface">Indian Pacer</td><td class="py-space-md px-space-lg"><div class="flex flex-wrap gap-space-xs"><span class="inline-flex items-center gap-1.5 px-space-sm py-1 rounded bg-on-secondary-fixed text-on-primary font-label-md text-label-md font-semibold"><span class="material-symbols-outlined text-[14px] text-tertiary-fixed">verified</span>Mohammed Shami</span><span class="inline-flex items-center gap-1.5 px-space-sm py-1 rounded bg-on-secondary-fixed text-on-primary font-label-md text-label-md font-semibold"><span class="material-symbols-outlined text-[14px] text-tertiary-fixed">verified</span>Brijesh Sharma</span></div></td><td class="py-space-md px-space-lg"><div class="flex flex-wrap gap-space-xs"><span class="inline-flex items-center gap-1.5 px-space-sm py-1 rounded border border-primary/40 bg-primary/5 text-on-surface font-label-md text-label-md font-medium"><span class="font-bold text-primary font-mono text-[11px]">#03</span>Umran Malik</span><span class="inline-flex items-center gap-1.5 px-space-sm py-1 rounded border border-primary/40 bg-primary/5 text-on-surface font-label-md text-label-md font-medium"><span class="font-bold text-primary font-mono text-[11px]">#09</span>Akash Madhwal</span></div></td></tr>
+                  <tr class="hover:bg-surface-container-low/50 transition-colors"><td class="py-space-md px-space-lg font-title-sm text-title-sm font-bold text-on-surface">Overseas Pacer</td><td class="py-space-md px-space-lg"><div class="flex flex-wrap gap-space-xs"><span class="inline-flex items-center gap-1.5 px-space-sm py-1 rounded bg-on-secondary-fixed text-on-primary font-label-md text-label-md font-semibold"><span class="material-symbols-outlined text-[14px] text-tertiary-fixed">verified</span>Jofra Archer</span><span class="inline-flex items-center gap-1.5 px-space-sm py-1 rounded bg-on-secondary-fixed text-on-primary font-label-md text-label-md font-semibold"><span class="material-symbols-outlined text-[14px] text-tertiary-fixed">verified</span>Nandre Burger</span><span class="inline-flex items-center gap-1.5 px-space-sm py-1 rounded bg-on-secondary-fixed text-on-primary font-label-md text-label-md font-semibold"><span class="material-symbols-outlined text-[14px] text-tertiary-fixed">verified</span>Lhuan-dre Pretorius</span></div></td><td class="py-space-md px-space-lg"><div class="flex flex-wrap gap-space-xs"><span class="inline-flex items-center gap-1.5 px-space-sm py-1 rounded border border-primary/40 bg-primary/5 text-on-surface font-label-md text-label-md font-medium"><span class="font-bold text-primary font-mono text-[11px]">#02</span>Gerald Coetzee</span><span class="inline-flex items-center gap-1.5 px-space-sm py-1 rounded border border-primary/40 bg-primary/5 text-on-surface font-label-md text-label-md font-medium"><span class="font-bold text-primary font-mono text-[11px]">#04</span>Taskin Ahmed</span></div></td></tr>
+                  <tr class="hover:bg-surface-container-low/50 transition-colors"><td class="py-space-md px-space-lg font-title-sm text-title-sm font-bold text-on-surface">Spinner</td><td class="py-space-md px-space-lg"><div class="flex flex-wrap gap-space-xs"><span class="inline-flex items-center gap-1.5 px-space-sm py-1 rounded bg-on-secondary-fixed text-on-primary font-label-md text-label-md font-semibold"><span class="material-symbols-outlined text-[14px] text-tertiary-fixed">verified</span>Ravi Bishnoi</span><span class="inline-flex items-center gap-1.5 px-space-sm py-1 rounded bg-on-secondary-fixed text-on-primary font-label-md text-label-md font-semibold"><span class="material-symbols-outlined text-[14px] text-tertiary-fixed">verified</span>Ravindra Jadeja</span></div></td><td class="py-space-md px-space-lg"><div class="flex flex-wrap gap-space-xs"><span class="inline-flex items-center gap-1.5 px-space-sm py-1 rounded border border-primary/40 bg-primary/5 text-on-surface font-label-md text-label-md font-medium"><span class="font-bold text-primary font-mono text-[11px]">#01</span>Matthew Humphreys</span><span class="inline-flex items-center gap-1.5 px-space-sm py-1 rounded border border-primary/40 bg-primary/5 text-on-surface font-label-md text-label-md font-medium"><span class="font-bold text-primary font-mono text-[11px]">#07</span>Maheesh Theekshana</span></div></td></tr>
+                  <tr class="hover:bg-surface-container-low/50 transition-colors"><td class="py-space-md px-space-lg font-title-sm text-title-sm font-bold text-on-surface">Bowling All-rounder</td><td class="py-space-md px-space-lg"><div class="flex flex-wrap gap-space-xs"><span class="inline-flex items-center gap-1.5 px-space-sm py-1 rounded bg-on-secondary-fixed text-on-primary font-label-md text-label-md font-semibold"><span class="material-symbols-outlined text-[14px] text-tertiary-fixed">verified</span>Dasun Shanaka</span></div></td><td class="py-space-md px-space-lg"><div class="flex flex-wrap gap-space-xs"><span class="inline-flex items-center gap-1.5 px-space-sm py-1 rounded border border-primary/40 bg-primary/5 text-on-surface font-label-md text-label-md font-medium"><span class="font-bold text-primary font-mono text-[11px]">#06</span>Mark Adair</span></div></td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- RETAINED PLAYER TABS -->
+          <div class="bg-surface-container-lowest rounded-xl border border-surface-container-high shadow-sm overflow-hidden">
+            <div class="p-space-lg border-b border-surface-container-high flex flex-col sm:flex-row sm:items-center justify-between gap-space-md">
+              <div><div class="flex items-center gap-space-xs"><span class="font-title-sm text-title-sm text-on-surface font-bold">Retained Players — Pressure Performance</span><span class="font-label-xs text-label-xs uppercase bg-primary-fixed text-on-primary-fixed px-space-xs py-[2px] rounded font-bold">In-House Benchmark</span></div><p class="font-body-md text-body-md text-secondary mt-1">Empirical stress telemetry for current franchise retentions</p></div>
+              <div class="inline-flex p-1 bg-surface-container rounded-lg border border-surface-container-high">
+                <button class="px-space-md py-1.5 rounded-md font-label-xs text-label-xs font-bold uppercase tracking-wider transition-all bg-primary text-on-primary shadow-sm flex items-center gap-1" id="tab-batters-btn"><span class="material-symbols-outlined text-[16px]">sports_cricket</span><span>Retained Batters (7)</span></button>
+                <button class="px-space-md py-1.5 rounded-md font-label-xs text-label-xs font-bold uppercase tracking-wider transition-all text-secondary hover:text-on-surface flex items-center gap-1" id="tab-bowlers-btn"><span class="material-symbols-outlined text-[16px]">sports_baseball</span><span>Retained Bowlers (8)</span></button>
+              </div>
+            </div>
+            <div class="block overflow-x-auto" id="retained-batters-panel">
+              <table class="w-full text-left border-collapse">
+                <thead><tr class="bg-surface-container-low text-secondary font-label-xs text-label-xs uppercase tracking-wider border-b border-surface-container-high"><th class="py-space-sm px-space-lg font-bold">Player Name</th><th class="py-space-sm px-space-md text-right font-bold">Pressure SR</th><th class="py-space-sm px-space-md text-right font-bold">Boundary %</th><th class="py-space-sm px-space-md text-right font-bold">Clutch Average</th><th class="py-space-sm px-space-md text-right font-bold">Composite Rating</th><th class="py-space-sm px-space-lg text-right font-bold">Pool Rank</th></tr></thead>
+                <tbody class="divide-y divide-surface-container font-body-md text-body-md">
+                  <tr class="hover:bg-surface-container-low/40 transition-colors"><td class="py-space-md px-space-lg font-semibold text-on-surface"><div class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-primary"></span>Dhruv Jurel</div></td><td class="py-space-md px-space-md text-right font-mono font-bold text-primary">181.8</td><td class="py-space-md px-space-md text-right font-mono text-on-surface">27.7%</td><td class="py-space-md px-space-md text-right font-mono text-secondary">29.3</td><td class="py-space-md px-space-md text-right"><span class="inline-block px-space-sm py-0.5 rounded font-mono font-bold text-on-surface bg-surface-container-high">85.59</span></td><td class="py-space-md px-space-lg text-right font-mono font-bold text-primary">#7</td></tr>
+                  <tr class="hover:bg-surface-container-low/40 transition-colors"><td class="py-space-md px-space-lg font-semibold text-on-surface"><div class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-primary"></span>Shubham Dubey</div></td><td class="py-space-md px-space-md text-right font-mono font-bold text-primary">190.3</td><td class="py-space-md px-space-md text-right font-mono text-on-surface">25.8%</td><td class="py-space-md px-space-md text-right font-mono text-secondary">26.2</td><td class="py-space-md px-space-md text-right"><span class="inline-block px-space-sm py-0.5 rounded font-mono font-bold text-on-surface bg-surface-container-high">85.42</span></td><td class="py-space-md px-space-lg text-right font-mono font-bold text-primary">#9</td></tr>
+                  <tr class="hover:bg-surface-container-low/40 transition-colors"><td class="py-space-md px-space-lg font-semibold text-on-surface"><div class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-primary"></span>Donovan Ferreira</div></td><td class="py-space-md px-space-md text-right font-mono font-bold text-primary">181.0</td><td class="py-space-md px-space-md text-right font-mono text-on-surface">28.6%</td><td class="py-space-md px-space-md text-right font-mono text-secondary">25.3</td><td class="py-space-md px-space-md text-right"><span class="inline-block px-space-sm py-0.5 rounded font-mono font-bold text-on-surface bg-surface-container-high">84.12</span></td><td class="py-space-md px-space-lg text-right font-mono font-bold text-primary">#11</td></tr>
+                  <tr class="hover:bg-surface-container-low/40 transition-colors"><td class="py-space-md px-space-lg font-semibold text-on-surface"><div class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-secondary"></span>Dasun Shanaka</div></td><td class="py-space-md px-space-md text-right font-mono font-bold text-on-surface">162.8</td><td class="py-space-md px-space-md text-right font-mono text-on-surface">24.1%</td><td class="py-space-md px-space-md text-right font-mono text-secondary">22.7</td><td class="py-space-md px-space-md text-right"><span class="inline-block px-space-sm py-0.5 rounded font-mono font-bold text-on-surface bg-surface-container-high">76.64</span></td><td class="py-space-md px-space-lg text-right font-mono font-bold text-secondary">#18</td></tr>
+                  <tr class="hover:bg-surface-container-low/40 transition-colors"><td class="py-space-md px-space-lg font-semibold text-on-surface"><div class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-secondary"></span>Ravindra Jadeja</div></td><td class="py-space-md px-space-md text-right font-mono font-bold text-on-surface">143.0</td><td class="py-space-md px-space-md text-right font-mono text-on-surface">20.5%</td><td class="py-space-md px-space-md text-right font-mono text-secondary">34.1</td><td class="py-space-md px-space-md text-right"><span class="inline-block px-space-sm py-0.5 rounded font-mono font-bold text-on-surface bg-surface-container-high">71.93</span></td><td class="py-space-md px-space-lg text-right font-mono font-bold text-secondary">#21</td></tr>
+                  <tr class="hover:bg-surface-container-low/40 transition-colors"><td class="py-space-md px-space-lg font-semibold text-on-surface"><div class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-outline"></span>Riyan Parag</div></td><td class="py-space-md px-space-md text-right font-mono font-bold text-on-surface">121.7</td><td class="py-space-md px-space-md text-right font-mono text-on-surface">18.4%</td><td class="py-space-md px-space-md text-right font-mono text-secondary">19.6</td><td class="py-space-md px-space-md text-right"><span class="inline-block px-space-sm py-0.5 rounded font-mono font-bold text-on-surface bg-surface-container-high">55.99</span></td><td class="py-space-md px-space-lg text-right font-mono font-bold text-secondary">#29</td></tr>
+                  <tr class="hover:bg-surface-container-low/40 transition-colors"><td class="py-space-md px-space-lg font-semibold text-on-surface"><div class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-outline"></span>Yashasvi Jaiswal</div></td><td class="py-space-md px-space-md text-right font-mono font-bold text-on-surface">118.9</td><td class="py-space-md px-space-md text-right font-mono text-on-surface">17.2%</td><td class="py-space-md px-space-md text-right font-mono text-secondary">15.3</td><td class="py-space-md px-space-md text-right"><span class="inline-block px-space-sm py-0.5 rounded font-mono font-bold text-on-surface bg-surface-container-high">48.20</span></td><td class="py-space-md px-space-lg text-right font-mono font-bold text-secondary">#33</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="hidden overflow-x-auto" id="retained-bowlers-panel">
+              <table class="w-full text-left border-collapse">
+                <thead><tr class="bg-surface-container-low text-secondary font-label-xs text-label-xs uppercase tracking-wider border-b border-surface-container-high"><th class="py-space-sm px-space-lg font-bold">Player Name</th><th class="py-space-sm px-space-md text-right font-bold">Pressure Econ</th><th class="py-space-sm px-space-md text-right font-bold">Dot-Ball %</th><th class="py-space-sm px-space-md text-right font-bold">Wickets</th><th class="py-space-sm px-space-md text-right font-bold">Composite Rating</th><th class="py-space-sm px-space-lg text-right font-bold">Pool Rank</th></tr></thead>
+                <tbody class="divide-y divide-surface-container font-body-md text-body-md">
+                  <tr class="hover:bg-surface-container-low/40 transition-colors"><td class="py-space-md px-space-lg font-semibold text-on-surface"><div class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-tertiary"></span>Dasun Shanaka</div></td><td class="py-space-md px-space-md text-right font-mono font-bold text-tertiary">8.26</td><td class="py-space-md px-space-md text-right font-mono text-on-surface">47.2%</td><td class="py-space-md px-space-md text-right font-mono text-secondary">7</td><td class="py-space-md px-space-md text-right"><span class="inline-block px-space-sm py-0.5 rounded font-mono font-bold text-on-surface bg-surface-container-high">64.08</span></td><td class="py-space-md px-space-lg text-right font-mono font-bold text-tertiary">#10</td></tr>
+                  <tr class="hover:bg-surface-container-low/40 transition-colors"><td class="py-space-md px-space-lg font-semibold text-on-surface"><div class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-tertiary"></span>Brijesh Sharma</div></td><td class="py-space-md px-space-md text-right font-mono font-bold text-tertiary">8.20</td><td class="py-space-md px-space-md text-right font-mono text-on-surface">46.7%</td><td class="py-space-md px-space-md text-right font-mono text-secondary">6</td><td class="py-space-md px-space-md text-right"><span class="inline-block px-space-sm py-0.5 rounded font-mono font-bold text-on-surface bg-surface-container-high">63.25</span></td><td class="py-space-md px-space-lg text-right font-mono font-bold text-tertiary">#11</td></tr>
+                  <tr class="hover:bg-surface-container-low/40 transition-colors"><td class="py-space-md px-space-lg font-semibold text-on-surface"><div class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-tertiary"></span>Mohammed Shami</div></td><td class="py-space-md px-space-md text-right font-mono font-bold text-on-surface">8.08</td><td class="py-space-md px-space-md text-right font-mono text-on-surface">36.5%</td><td class="py-space-md px-space-md text-right font-mono text-secondary">5</td><td class="py-space-md px-space-md text-right"><span class="inline-block px-space-sm py-0.5 rounded font-mono font-bold text-on-surface bg-surface-container-high">59.26</span></td><td class="py-space-md px-space-lg text-right font-mono font-bold text-secondary">#14</td></tr>
+                  <tr class="hover:bg-surface-container-low/40 transition-colors"><td class="py-space-md px-space-lg font-semibold text-on-surface"><div class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-tertiary"></span>Jofra Archer</div></td><td class="py-space-md px-space-md text-right font-mono font-bold text-on-surface">7.98</td><td class="py-space-md px-space-md text-right font-mono text-on-surface">36.4%</td><td class="py-space-md px-space-md text-right font-mono text-secondary">8</td><td class="py-space-md px-space-md text-right"><span class="inline-block px-space-sm py-0.5 rounded font-mono font-bold text-on-surface bg-surface-container-high">58.79</span></td><td class="py-space-md px-space-lg text-right font-mono font-bold text-secondary">#16</td></tr>
+                  <tr class="hover:bg-surface-container-low/40 transition-colors"><td class="py-space-md px-space-lg font-semibold text-on-surface"><div class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-secondary"></span>Nandre Burger</div></td><td class="py-space-md px-space-md text-right font-mono font-bold text-on-surface">9.33</td><td class="py-space-md px-space-md text-right font-mono text-on-surface">52.8%</td><td class="py-space-md px-space-md text-right font-mono text-secondary">3</td><td class="py-space-md px-space-md text-right"><span class="inline-block px-space-sm py-0.5 rounded font-mono font-bold text-on-surface bg-surface-container-high">55.13</span></td><td class="py-space-md px-space-lg text-right font-mono font-bold text-secondary">#21</td></tr>
+                  <tr class="hover:bg-surface-container-low/40 transition-colors"><td class="py-space-md px-space-lg font-semibold text-on-surface"><div class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-secondary"></span>Lhuan-dre Pretorius</div></td><td class="py-space-md px-space-md text-right font-mono font-bold text-on-surface">9.68</td><td class="py-space-md px-space-md text-right font-mono text-on-surface">38.7%</td><td class="py-space-md px-space-md text-right font-mono text-secondary">4</td><td class="py-space-md px-space-md text-right"><span class="inline-block px-space-sm py-0.5 rounded font-mono font-bold text-on-surface bg-surface-container-high">52.40</span></td><td class="py-space-md px-space-lg text-right font-mono font-bold text-secondary">#25</td></tr>
+                  <tr class="hover:bg-surface-container-low/40 transition-colors"><td class="py-space-md px-space-lg font-semibold text-on-surface"><div class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-secondary"></span>Ravi Bishnoi</div></td><td class="py-space-md px-space-md text-right font-mono font-bold text-on-surface">9.63</td><td class="py-space-md px-space-md text-right font-mono text-on-surface">40.4%</td><td class="py-space-md px-space-md text-right font-mono text-secondary">29</td><td class="py-space-md px-space-md text-right"><span class="inline-block px-space-sm py-0.5 rounded font-mono font-bold text-on-surface bg-surface-container-high">50.27</span></td><td class="py-space-md px-space-lg text-right font-mono font-bold text-secondary">#29</td></tr>
+                  <tr class="hover:bg-surface-container-low/40 transition-colors"><td class="py-space-md px-space-lg font-semibold text-on-surface"><div class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-outline"></span>Sandeep Sharma</div></td><td class="py-space-md px-space-md text-right font-mono font-bold text-on-surface">10.64</td><td class="py-space-md px-space-md text-right font-mono text-on-surface">32.1%</td><td class="py-space-md px-space-md text-right font-mono text-secondary">7</td><td class="py-space-md px-space-md text-right"><span class="inline-block px-space-sm py-0.5 rounded font-mono font-bold text-on-surface bg-surface-container-high">30.83</span></td><td class="py-space-md px-space-lg text-right font-mono font-bold text-secondary">#34</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- LEADERBOARD -->
+          <div class="bg-surface-container-lowest rounded-xl border border-surface-container-high shadow-sm overflow-hidden">
+            <div class="p-space-lg border-b border-surface-container-high flex flex-col xl:flex-row xl:items-center justify-between gap-space-md">
+              <div><div class="flex items-center gap-space-xs"><span class="font-title-sm text-title-sm text-on-surface font-bold">RR Squad — Pressure Performance Leaderboard</span><span class="font-label-xs text-label-xs uppercase bg-secondary-container text-on-secondary-container px-space-xs py-[2px] rounded font-bold">28 Entities</span></div><p class="font-body-md text-body-md text-secondary mt-1">Unified ranking of retained core alongside top 20 auction targets</p></div>
+              <div class="flex flex-wrap items-center gap-space-sm">
+                <div class="relative"><span class="material-symbols-outlined absolute left-2.5 top-1/2 -translate-y-1/2 text-[18px] text-secondary">search</span><input class="h-9 pl-9 pr-3 rounded-lg border border-surface-container-high bg-surface-container-low font-body-md text-body-md text-on-surface placeholder:text-secondary focus:outline-none focus:border-tertiary w-48 sm:w-60 transition-all" id="leaderboard-search" placeholder="Search player or role..." type="text"/></div>
+                <div class="inline-flex p-1 bg-surface-container-low rounded-lg border border-surface-container-high">
+                  <button class="filter-pill-btn px-space-sm py-1 rounded font-label-xs text-label-xs font-bold uppercase transition-all bg-on-secondary-fixed text-on-primary" data-filter="all">All (28)</button>
+                  <button class="filter-pill-btn px-space-sm py-1 rounded font-label-xs text-label-xs font-bold uppercase transition-all text-secondary hover:text-on-surface" data-filter="retained">Retained (8)</button>
+                  <button class="filter-pill-btn px-space-sm py-1 rounded font-label-xs text-label-xs font-bold uppercase transition-all text-secondary hover:text-on-surface" data-filter="target">Targets (20)</button>
+                </div>
+                <select class="h-9 px-3 rounded-lg border border-surface-container-high bg-surface-container-low font-label-xs text-label-xs font-bold uppercase tracking-wider text-on-surface focus:outline-none" id="leaderboard-sort"><option value="pressure">Sort: Pressure Score</option><option value="composite">Sort: Composite</option><option value="name">Sort: Name</option></select>
+              </div>
+            </div>
+            <div class="overflow-x-auto max-h-[560px] overflow-y-auto">
+              <table class="w-full text-left border-collapse">
+                <thead class="sticky top-0 z-10"><tr class="bg-surface-container text-secondary font-label-xs text-label-xs uppercase tracking-wider border-b border-surface-container-high"><th class="py-space-sm px-space-md w-16 text-center font-bold">Rank</th><th class="py-space-sm px-space-lg font-bold">Player Name</th><th class="py-space-sm px-space-md font-bold">Tactical Profile</th><th class="py-space-sm px-space-md text-right font-bold">Pressure Score</th><th class="py-space-sm px-space-md text-right font-bold">Composite</th><th class="py-space-sm px-space-lg text-right font-bold">Squad Status</th></tr></thead>
+                <tbody class="divide-y divide-surface-container font-body-md text-body-md" id="leaderboard-body"></tbody>
+              </table>
+            </div>
+            <div class="p-space-sm px-space-lg bg-surface-container-low border-t border-surface-container-high flex items-center justify-between font-label-xs text-label-xs text-secondary">
+              <span id="showing-count-label">Showing 28 of 28 players</span>
+              <span class="font-mono">DATA: IPL + T20I 2022–2026</span>
+            </div>
+          </div>
+
+          <!-- ANALYTICAL TAKEAWAY -->
+          <div class="bg-on-secondary-fixed text-on-tertiary rounded-xl p-space-lg border-l-4 border-primary shadow-md flex flex-col md:flex-row items-start md:items-center justify-between gap-space-lg relative overflow-hidden">
+            <div class="flex-1"><div class="flex items-center gap-space-xs font-label-xs text-label-xs uppercase tracking-wider text-primary-fixed font-bold mb-space-xs"><span class="material-symbols-outlined text-[16px] text-primary-container">lightbulb</span>OPERATIONAL WAR ROOM MEMORANDUM</div><h3 class="font-headline-md text-headline-md text-on-primary font-bold">What This Means for Rajasthan Royals</h3><p class="font-body-md text-body-md text-tertiary-fixed mt-space-xs leading-relaxed max-w-3xl">RR enters the 2027 auction with a pressure-tested retained core. Jurel, Dubey and Ferreira rank within the top 12 of the batting candidate pool, providing a strong analytical foundation before auction spending. Tactical purse preservation should tilt towards securing primary pace &amp; finger-spin targets early.</p></div>
+            <div class="flex flex-wrap md:flex-col gap-space-xs shrink-0"><div class="inline-flex items-center gap-2 bg-secondary/40 px-space-md py-space-xs rounded font-label-xs text-label-xs font-bold text-on-primary border border-tertiary/30"><span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>3 Batters in Top 12 Candidate Pool</div><div class="inline-flex items-center gap-2 bg-secondary/40 px-space-md py-space-xs rounded font-label-xs text-label-xs font-bold text-on-primary border border-tertiary/30"><span class="w-1.5 h-1.5 rounded-full bg-tertiary-fixed"></span>Pace &amp; Spin Reinforcements Needed</div><div class="inline-flex items-center gap-2 bg-secondary/40 px-space-md py-space-xs rounded font-label-xs text-label-xs font-bold text-on-primary border border-tertiary/30"><span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>Optimal Purse Allocation Strategy</div></div>
+          </div>
+
+          <!-- FRANCHISE RETENTION ACCORDION -->
+          <div class="bg-surface-container-lowest rounded-xl border border-surface-container-high shadow-sm overflow-hidden mb-space-lg">
+            <button class="w-full p-space-lg text-left flex items-center justify-between hover:bg-surface-container-low/50 transition-colors focus:outline-none" id="accordion-toggle-btn">
+              <div class="flex items-center gap-space-md"><div class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-primary"><span class="material-symbols-outlined text-[20px]">fact_check</span></div><div><div class="flex items-center gap-space-xs"><span class="font-title-sm text-title-sm text-on-surface font-bold">IPL 2027 Franchise Retention Verification</span><span class="font-label-xs text-label-xs uppercase bg-surface-container-high text-on-surface font-bold px-space-xs py-[2px] rounded">10 Franchises</span></div><p class="font-body-md text-body-md text-secondary mt-0.5">Official 10-Franchise Retention Snapshot • Cross-checked against official IPL auction graphics</p></div></div>
+              <div class="flex items-center gap-space-sm text-secondary"><span class="font-label-xs text-label-xs uppercase font-bold hidden sm:inline-block" id="accordion-status-label">Click to Expand</span><span class="material-symbols-outlined text-[24px] transition-transform duration-200" id="accordion-chevron">expand_more</span></div>
+            </button>
+            <div class="hidden border-t border-surface-container-high p-space-lg bg-surface-container-low/30" id="accordion-content">
+              <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-md">
+                <div class="p-space-md bg-surface-container-lowest rounded-lg border-2 border-primary shadow-sm flex flex-col"><div class="flex items-center justify-between border-b border-surface-container-high pb-space-xs mb-space-xs"><span class="font-title-sm text-title-sm font-bold text-primary flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">stars</span>Rajasthan Royals (RR)</span><span class="font-label-xs text-label-xs font-bold text-primary bg-primary/10 px-space-xs py-[1px] rounded">13 Assets</span></div><p class="font-body-md text-body-md text-on-surface leading-snug">Yashasvi Jaiswal, Riyan Parag, Dhruv Jurel, Shubham Dubey, Donovan Ferreira, Ravindra Jadeja, Dasun Shanaka, Mohammed Shami, Jofra Archer, Ravi Bishnoi, Brijesh Sharma, Nandre Burger, Sandeep Sharma</p></div>
+                <div class="p-space-md bg-surface-container-lowest rounded-lg border border-surface-container-high shadow-sm flex flex-col"><div class="flex items-center justify-between border-b border-surface-container-high pb-space-xs mb-space-xs"><span class="font-title-sm text-title-sm font-bold text-on-surface">Chennai Super Kings (CSK)</span><span class="font-label-xs text-label-xs font-bold text-secondary bg-surface-container px-space-xs py-[1px] rounded">4 Retentions</span></div><p class="font-body-md text-body-md text-secondary leading-snug">Ruturaj Gaikwad, Matheesha Pathirana, Shivam Dube, MS Dhoni</p></div>
+                <div class="p-space-md bg-surface-container-lowest rounded-lg border border-surface-container-high shadow-sm flex flex-col"><div class="flex items-center justify-between border-b border-surface-container-high pb-space-xs mb-space-xs"><span class="font-title-sm text-title-sm font-bold text-on-surface">Mumbai Indians (MI)</span><span class="font-label-xs text-label-xs font-bold text-secondary bg-surface-container px-space-xs py-[1px] rounded">5 Retentions</span></div><p class="font-body-md text-body-md text-secondary leading-snug">Jasprit Bumrah, Suryakumar Yadav, Hardik Pandya, Rohit Sharma, Tilak Varma</p></div>
+                <div class="p-space-md bg-surface-container-lowest rounded-lg border border-surface-container-high shadow-sm flex flex-col"><div class="flex items-center justify-between border-b border-surface-container-high pb-space-xs mb-space-xs"><span class="font-title-sm text-title-sm font-bold text-on-surface">Kolkata Knight Riders (KKR)</span><span class="font-label-xs text-label-xs font-bold text-secondary bg-surface-container px-space-xs py-[1px] rounded">6 Retentions</span></div><p class="font-body-md text-body-md text-secondary leading-snug">Rinku Singh, Varun Chakaravarthy, Sunil Narine, Andre Russell, Harshit Rana, Ramandeep Singh</p></div>
+                <div class="p-space-md bg-surface-container-lowest rounded-lg border border-surface-container-high shadow-sm flex flex-col"><div class="flex items-center justify-between border-b border-surface-container-high pb-space-xs mb-space-xs"><span class="font-title-sm text-title-sm font-bold text-on-surface">Sunrisers Hyderabad (SRH)</span><span class="font-label-xs text-label-xs font-bold text-secondary bg-surface-container px-space-xs py-[1px] rounded">5 Retentions</span></div><p class="font-body-md text-body-md text-secondary leading-snug">Heinrich Klaasen, Pat Cummins, Abhishek Sharma, Travis Head, Nitish Kumar Reddy</p></div>
+                <div class="p-space-md bg-surface-container-lowest rounded-lg border border-surface-container-high shadow-sm flex flex-col"><div class="flex items-center justify-between border-b border-surface-container-high pb-space-xs mb-space-xs"><span class="font-title-sm text-title-sm font-bold text-on-surface">Gujarat Titans (GT)</span><span class="font-label-xs text-label-xs font-bold text-secondary bg-surface-container px-space-xs py-[1px] rounded">5 Retentions</span></div><p class="font-body-md text-body-md text-secondary leading-snug">Rashid Khan, Shubman Gill, Sai Sudharsan, Rahul Tewatia, Shahrukh Khan</p></div>
+                <div class="p-space-md bg-surface-container-lowest rounded-lg border border-surface-container-high shadow-sm flex flex-col"><div class="flex items-center justify-between border-b border-surface-container-high pb-space-xs mb-space-xs"><span class="font-title-sm text-title-sm font-bold text-on-surface">Delhi Capitals (DC)</span><span class="font-label-xs text-label-xs font-bold text-secondary bg-surface-container px-space-xs py-[1px] rounded">4 Retentions</span></div><p class="font-body-md text-body-md text-secondary leading-snug">Axar Patel, Kuldeep Yadav, Tristan Stubbs, Abishek Porel</p></div>
+                <div class="p-space-md bg-surface-container-lowest rounded-lg border border-surface-container-high shadow-sm flex flex-col"><div class="flex items-center justify-between border-b border-surface-container-high pb-space-xs mb-space-xs"><span class="font-title-sm text-title-sm font-bold text-on-surface">Lucknow Super Giants (LSG)</span><span class="font-label-xs text-label-xs font-bold text-secondary bg-surface-container px-space-xs py-[1px] rounded">5 Retentions</span></div><p class="font-body-md text-body-md text-secondary leading-snug">Nicholas Pooran, Ravi Bishnoi, Mayank Yadav, Mohsin Khan, Ayush Badoni</p></div>
+                <div class="p-space-md bg-surface-container-lowest rounded-lg border border-surface-container-high shadow-sm flex flex-col"><div class="flex items-center justify-between border-b border-surface-container-high pb-space-xs mb-space-xs"><span class="font-title-sm text-title-sm font-bold text-on-surface">Punjab Kings (PBKS)</span><span class="font-label-xs text-label-xs font-bold text-secondary bg-surface-container px-space-xs py-[1px] rounded">2 Retentions</span></div><p class="font-body-md text-body-md text-secondary leading-snug">Shashank Singh, Prabhsimran Singh</p></div>
+                <div class="p-space-md bg-surface-container-lowest rounded-lg border border-surface-container-high shadow-sm flex flex-col"><div class="flex items-center justify-between border-b border-surface-container-high pb-space-xs mb-space-xs"><span class="font-title-sm text-title-sm font-bold text-on-surface">Royal Challengers Bengaluru (RCB)</span><span class="font-label-xs text-label-xs font-bold text-secondary bg-surface-container px-space-xs py-[1px] rounded">3 Retentions</span></div><p class="font-body-md text-body-md text-secondary leading-snug">Virat Kohli, Rajat Patidar, Yash Dayal</p></div>
+              </div>
+              <div class="mt-space-md pt-space-sm border-t border-surface-container-high font-label-xs text-label-xs text-secondary flex items-center justify-between"><span>Source: Cross-checked against official IPL auction graphics &amp; franchise retention filings.</span><span class="font-bold text-primary">Status: Audited</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+</div>
+
+<!-- GLOBAL PLAYER DRAWER (Player Rankings) -->
+<div class="fixed inset-0 bg-on-secondary-fixed/50 backdrop-blur-sm z-[60] transition-opacity duration-300 opacity-0 pointer-events-none" id="drawer-backdrop" onclick="closeDrawer()"></div>
+<aside class="fixed right-0 top-0 bottom-0 w-full max-w-lg bg-surface-container-lowest shadow-2xl z-[70] transform translate-x-full transition-transform duration-300 ease-in-out flex flex-col overflow-y-auto" id="player-drawer">
+  <div class="p-space-lg bg-surface-container border-b border-surface-container-high relative">
+    <button class="absolute top-4 right-4 w-8 h-8 rounded-full bg-surface-container-highest text-secondary hover:text-on-surface flex items-center justify-center transition-colors" onclick="closeDrawer()"><span class="material-symbols-outlined text-[20px]">close</span></button>
+    <div class="flex items-center gap-space-sm mb-space-sm"><span class="px-space-sm py-0.5 rounded-md font-label-xs text-label-xs font-bold bg-primary text-on-primary uppercase" id="drawer-rank">Rank #01</span><span class="px-space-sm py-0.5 rounded-md font-label-xs text-label-xs font-bold bg-surface-container-highest text-secondary uppercase" id="drawer-nat">Overseas</span><span class="px-space-sm py-0.5 rounded-md font-label-xs text-label-xs font-bold bg-secondary-fixed text-on-secondary-fixed uppercase" id="drawer-category-badge">Batter Target</span></div>
+    <h2 class="font-headline-xl text-headline-xl font-extrabold text-on-surface tracking-tight" id="drawer-name">Player Name</h2>
+    <div class="font-title-sm text-title-sm font-semibold text-secondary mt-0.5" id="drawer-role">Role</div>
+    <div class="mt-space-md flex items-center justify-between p-space-md rounded-xl bg-surface-container-lowest shadow-sm">
+      <div><div class="font-label-xs text-label-xs uppercase font-bold text-secondary">RR Auction Score</div><div class="font-metric-headline text-metric-headline font-black text-primary" id="drawer-score">—</div></div>
+      <div class="text-right"><div class="font-label-xs text-label-xs uppercase font-bold text-secondary">Composite Rating</div><div class="font-metric-headline text-metric-headline font-black text-on-surface" id="drawer-composite">—</div></div>
+    </div>
+  </div>
+  <div class="p-space-lg flex flex-col gap-space-lg flex-1">
+    <div><div class="font-label-xs text-label-xs uppercase font-bold text-secondary tracking-wider mb-space-sm">Pressure Telemetry Breakdown</div><div class="grid grid-cols-2 gap-space-sm" id="drawer-metrics-container"></div></div>
+    <div class="p-space-md rounded-xl bg-surface-container-low flex flex-col gap-space-sm">
+      <div class="flex items-center justify-between font-label-xs text-label-xs uppercase font-bold text-secondary"><span>Clutch Index Calibration</span><span class="text-primary font-bold" id="drawer-calibration-text">Top 1% Tier</span></div>
+      <div class="w-full h-2 rounded-full bg-surface-container-highest overflow-hidden"><div class="h-full bg-primary transition-all duration-500" id="drawer-calibration-bar" style="width:0%"></div></div>
+      <div class="flex justify-between text-[11px] text-secondary font-semibold"><span>Baseline RRR: 9.5</span><span>Death Overs (16-20)</span><span>Wickets in Hand: &lt;3</span></div>
+    </div>
+    <div class="p-space-md rounded-xl bg-surface-container-lowest shadow-xs flex flex-col gap-space-xs">
+      <div class="flex items-center gap-space-xs text-primary font-label-xs text-label-xs uppercase font-bold tracking-wider"><span class="material-symbols-outlined text-[16px]">psychology</span><span>Why Rajasthan Royals?</span></div>
+      <p class="font-body-md text-body-md text-on-surface leading-relaxed mt-1" id="drawer-scout-notes">—</p>
+    </div>
+    <div class="mt-auto pt-space-md flex flex-col gap-space-xs">
+      <button class="w-full py-2.5 rounded-lg bg-primary text-on-primary font-title-sm text-title-sm font-bold shadow-md hover:bg-primary-container transition-all flex items-center justify-center gap-2" onclick="alert('Target flagged for RR War Room Shortlist.')"><span class="material-symbols-outlined text-[18px]">bookmark_add</span><span>Flag for RR War Room Shortlist</span></button>
+    </div>
+  </div>
+</aside>
+
+<!-- ===== UNIFIED JAVASCRIPT ===== -->
+<script>
+// ==================== SPA ROUTER ====================
+const pageLabels = { 'overview': 'Overview', 'player-rankings': 'Player Rankings', 'squad-intelligence': 'Squad Intelligence' };
+
+function navigate(page) {
+  document.querySelectorAll('[data-page]').forEach(el => el.classList.remove('page-active'));
+  const target = document.querySelector('[data-page="' + page + '"]');
+  if (target) target.classList.add('page-active');
+  document.querySelectorAll('.nav-link').forEach(link => {
+    if (link.getAttribute('data-nav') === page) {
+      link.className = 'nav-link flex items-center gap-space-sm px-space-md py-space-sm rounded-lg transition-all bg-primary text-on-primary font-bold shadow-md';
+    } else {
+      link.className = 'nav-link flex items-center gap-space-sm px-space-md py-space-sm rounded-lg font-title-sm text-title-sm text-tertiary-fixed hover:bg-secondary/40 hover:text-on-primary transition-all';
+    }
+  });
+  const bc = document.getElementById('breadcrumb-current');
+  if (bc) bc.textContent = pageLabels[page] || page;
+  window.scrollTo(0, 0);
+}
+
+document.querySelectorAll('.nav-link').forEach(link => {
+  link.addEventListener('click', e => { e.preventDefault(); navigate(link.getAttribute('data-nav')); });
+});
+
+// ==================== PLAYER RANKINGS ====================
+const battersData = [
+  { rank:'01', name:'Rassie van der Dussen', nat:'Overseas', role:'Middle-order Finisher', balls:37, psr:240.5, boundary:'37.8%', pavg:59.3, composite:94.95, score:100.00, notes:'Elite late-innings accelerator in extreme RRR conditions (>15). High boundary efficiency against high pace and death spin. Fits Rajasthan\'s middle-order finishing slot.' },
+  { rank:'02', name:'Najibullah Zadran', nat:'Overseas', role:'Lower-order Hitter', balls:27, psr:214.8, boundary:'33.3%', pavg:23.2, composite:87.82, score:97.67, notes:'Proven left-handed power hitter capable of clearing long boundaries. Explosive launch angle profile against hard length pacers in death overs.' },
+  { rank:'03', name:'Moeen Ali', nat:'Overseas', role:'Batting All-rounder', balls:72, psr:195.8, boundary:'30.6%', pavg:25.6, composite:87.03, score:95.33, notes:'Veteran champion with championship-winning pedigree. High strike-rate counter-attacking against spin plus tactical off-break containment.' },
+  { rank:'04', name:'Evin Lewis', nat:'Overseas', role:'Explosive Opener', balls:21, psr:161.9, boundary:'28.6%', pavg:68.0, composite:86.46, score:93.00, notes:'Devastating powerplay intent with top-tier average under pressure. Proven franchise track record with aggressive power zone clearing.' },
+  { rank:'05', name:'Mark Chapman', nat:'Overseas', role:'Top-order Batter', balls:60, psr:173.3, boundary:'25.0%', pavg:41.6, composite:84.49, score:81.33, notes:'Exceptional player of spin who uses sweep variations to dismantle field setups. Left-handed versatility across positions 3 through 5.' },
+  { rank:'06', name:'Mahipal Lomror', nat:'Indian', role:'Middle-order Finisher', balls:31, psr:206.5, boundary:'32.3%', pavg:18.3, composite:84.13, score:79.00, notes:'Homegrown Rajasthan talent. High boundary strike rate over 200 in high-leverage overs. Economical uncapped/domestic slot priority.' },
+  { rank:'07', name:'Sikandar Raza', nat:'Overseas', role:'Batting All-rounder', balls:69, psr:175.4, boundary:'23.2%', pavg:26.9, composite:82.08, score:72.00, notes:'Ice-cold clutch performer across global franchise finals. Dual-threat spin bowler with carrom ball variations.' },
+  { rank:'08', name:'Reeza Hendricks', nat:'Overseas', role:'Opening Batter', balls:44, psr:170.5, boundary:'27.3%', pavg:21.4, composite:80.81, score:69.67, notes:'Classical top-order anchor capable of seamless acceleration. Solid technique against swinging new ball in first 4 overs.' },
+  { rank:'09', name:'Prashant Veer', nat:'Overseas', role:'Middle-order Batter', balls:31, psr:148.4, boundary:'22.6%', pavg:30.7, composite:77.08, score:65.00, notes:'Emerging tactical profile showing reliable strike rotation and composed temperament during middle-overs squeeze.' },
+  { rank:'10', name:'Shimron Hetmyer', nat:'Overseas', role:'Explosive Finisher', balls:155, psr:167.7, boundary:'23.9%', pavg:19.3, composite:76.71, score:62.67, notes:'Franchise icon and clutch anchor. Heavily tested under highest pressure sample size (155 balls). Death overs execution and locker room leadership.' }
+];
+const bowlersData = [
+  { rank:'01', name:'Matthew Humphreys', nat:'Overseas', role:'Spin Bowler', balls:32, econ:4.31, dot:'65.6%', wkts:8, composite:89.49, score:100.00, notes:'Elite defensive choke specialist. Extraordinary 4.31 pressure economy with 65.6% dot ball rate. Ideal high-leverage option at Sawai Mansingh Stadium.' },
+  { rank:'02', name:'Gerald Coetzee', nat:'Overseas', role:'Fast Bowler', balls:53, econ:7.25, dot:'49.1%', wkts:8, composite:75.09, score:98.00, notes:'Fiery enforcer hitting hard lengths at 145kph+. High strike-rate middle and death enforcer with raw wicket-taking punch.' },
+  { rank:'03', name:'Umran Malik', nat:'Indian', role:'Express Fast Bowler', balls:61, econ:7.48, dot:'44.3%', wkts:8, composite:71.06, score:92.00, notes:'Indian express pace weapon. Capable of shattering partnerships with 150kph heat. Key domestic bowling asset.' },
+  { rank:'04', name:'Taskin Ahmed', nat:'Overseas', role:'Fast-medium Bowler', balls:85, econ:7.41, dot:'43.5%', wkts:7, composite:69.84, score:90.00, notes:'Consistent seam presentation and disciplined execution of back-of-a-length deliveries under chase conditions.' },
+  { rank:'05', name:'Barry McCarthy', nat:'Overseas', role:'Fast-medium Bowler', balls:64, econ:7.69, dot:'45.3%', wkts:6, composite:68.03, score:86.00, notes:'Smart change-of-pace exponent with effective wide yorkers and knuckle balls during 18th-20th overs.' },
+  { rank:'06', name:'Mark Adair', nat:'Overseas', role:'Fast-medium All-rounder', balls:73, econ:8.05, dot:'34.3%', wkts:9, composite:63.10, score:80.00, notes:'High wicket-taking frequency (9 pressure scalps). Capable of breaking games open with deceptive slower-ball cutters.' },
+  { rank:'07', name:'Maheesh Theekshana', nat:'Overseas', role:'Mystery Spinner', balls:196, econ:8.33, dot:'37.8%', wkts:13, composite:59.61, score:76.00, notes:'Massive sample size (196 pressure balls). Controls powerplay and death overs with subtle finger spin carrom variations.' },
+  { rank:'08', name:'Sean Abbott', nat:'Overseas', role:'Fast-medium Bowler', balls:31, econ:9.29, dot:'41.9%', wkts:5, composite:57.49, score:70.00, notes:'Experienced death-bowling specialist with sharp bumper and dependable boundary fielding athleticism.' },
+  { rank:'09', name:'Akash Madhwal', nat:'Indian', role:'Fast-medium Bowler', balls:34, econ:9.53, dot:'58.8%', wkts:4, composite:57.11, score:68.00, notes:'Proven slingy blockhole specialist. High 58.8% dot ball density gives tactical utility in specific death matchups.' },
+  { rank:'10', name:'David Willey', nat:'Overseas', role:'Left-arm Fast-medium', balls:27, econ:8.44, dot:'33.3%', wkts:3, composite:55.59, score:64.00, notes:'Natural left-arm swing angle creates severe angles against right-handed opening batters in high-pressure chases.' }
+];
+
+let currentCategory = 'batters';
+let currentNationality = 'all';
+
+function switchCategory(cat) {
+  currentCategory = cat;
+  const btnB = document.getElementById('tab-batters');
+  const btnBo = document.getElementById('tab-bowlers');
+  const lbl = document.getElementById('active-category-label');
+  if (cat === 'batters') {
+    btnB.className = 'flex items-center gap-2 px-space-lg py-2 rounded-lg font-title-sm text-title-sm font-bold transition-all bg-primary text-on-primary shadow-md';
+    btnBo.className = 'flex items-center gap-2 px-space-lg py-2 rounded-lg font-title-sm text-title-sm font-semibold transition-all text-secondary hover:text-on-surface';
+    if (lbl) lbl.textContent = 'Top 10 Batters';
+  } else {
+    btnBo.className = 'flex items-center gap-2 px-space-lg py-2 rounded-lg font-title-sm text-title-sm font-bold transition-all bg-primary text-on-primary shadow-md';
+    btnB.className = 'flex items-center gap-2 px-space-lg py-2 rounded-lg font-title-sm text-title-sm font-semibold transition-all text-secondary hover:text-on-surface';
+    if (lbl) lbl.textContent = 'Top 10 Bowlers';
+  }
+  applyFilters();
+}
+
+function setNationality(nat) {
+  currentNationality = nat;
+  ['all','Indian','Overseas'].forEach(n => {
+    const el = document.getElementById('nat-' + n);
+    if (!el) return;
+    if (n === nat) { el.className = 'px-space-sm py-1 rounded-md font-bold bg-surface-container-lowest text-on-surface shadow-xs transition-colors'; }
+    else { el.className = 'px-space-sm py-1 rounded-md font-medium hover:text-on-surface transition-colors'; }
+  });
+  applyFilters();
+}
+
+function clearAllFilters() {
+  const ps = document.getElementById('player-search'); if (ps) ps.value = '';
+  const rf = document.getElementById('role-filter'); if (rf) rf.value = 'all';
+  const ss = document.getElementById('sort-selector'); if (ss) ss.value = 'score';
+  setNationality('all');
+}
+
+function applyFilters() {
+  const data = currentCategory === 'batters' ? battersData : bowlersData;
+  const psEl = document.getElementById('player-search');
+  const rfEl = document.getElementById('role-filter');
+  const ssEl = document.getElementById('sort-selector');
+  const search = psEl ? psEl.value.toLowerCase().trim() : '';
+  const roleFilter = rfEl ? rfEl.value : 'all';
+  const sortType = ssEl ? ssEl.value : 'score';
+
+  let filtered = data.filter(p => {
+    const matchName = p.name.toLowerCase().includes(search);
+    const matchNat = currentNationality === 'all' || p.nat === currentNationality;
+    const matchRole = roleFilter === 'all' || p.role.toLowerCase().includes(roleFilter.toLowerCase());
+    return matchName && matchNat && matchRole;
+  });
+  filtered.sort((a, b) => {
+    if (sortType === 'composite') return b.composite - a.composite;
+    if (sortType === 'balls') return b.balls - a.balls;
+    return b.score - a.score;
+  });
+  renderTable(filtered);
+}
+
+function renderTable(players) {
+  const thead = document.getElementById('table-head');
+  const tbody = document.getElementById('table-body');
+  const emptyState = document.getElementById('empty-state');
+  const countLabel = document.getElementById('filtered-count');
+  if (!thead || !tbody) return;
+  if (countLabel) countLabel.textContent = players.length + ' of 10 matches';
+  if (players.length === 0) {
+    tbody.innerHTML = ''; thead.innerHTML = '';
+    if (emptyState) { emptyState.classList.remove('hidden'); emptyState.classList.add('flex'); }
+    return;
+  } else {
+    if (emptyState) { emptyState.classList.add('hidden'); emptyState.classList.remove('flex'); }
+  }
+  if (currentCategory === 'batters') {
+    thead.innerHTML = '<tr><th class="py-3 px-space-md w-16">Rank</th><th class="py-3 px-space-md">Target Player</th><th class="py-3 px-space-sm">Origin</th><th class="py-3 px-space-md">Role Profile</th><th class="py-3 px-space-md text-right">P-Balls</th><th class="py-3 px-space-md text-right">Pressure SR</th><th class="py-3 px-space-md text-right">Boundary %</th><th class="py-3 px-space-md text-right">P-Average</th><th class="py-3 px-space-md text-right">Composite</th><th class="py-3 px-space-md text-right">RR Score</th><th class="py-3 px-space-sm text-center w-10">›</th></tr>';
+  } else {
+    thead.innerHTML = '<tr><th class="py-3 px-space-md w-16">Rank</th><th class="py-3 px-space-md">Target Player</th><th class="py-3 px-space-sm">Origin</th><th class="py-3 px-space-md">Role Profile</th><th class="py-3 px-space-md text-right">P-Balls</th><th class="py-3 px-space-md text-right">Pressure Econ</th><th class="py-3 px-space-md text-right">Dot %</th><th class="py-3 px-space-md text-right">Wickets</th><th class="py-3 px-space-md text-right">Composite</th><th class="py-3 px-space-md text-right">RR Score</th><th class="py-3 px-space-sm text-center w-10">›</th></tr>';
+  }
+  tbody.innerHTML = players.map(p => {
+    const rankBadge = p.rank === '01'
+      ? '<span class="inline-flex items-center justify-center w-7 h-7 rounded-lg bg-primary text-on-primary font-bold text-xs shadow-sm">' + p.rank + '</span>'
+      : (p.rank === '02' || p.rank === '03')
+      ? '<span class="inline-flex items-center justify-center w-7 h-7 rounded-lg bg-primary-fixed text-on-primary-fixed-variant font-bold text-xs">' + p.rank + '</span>'
+      : '<span class="inline-flex items-center justify-center w-7 h-7 rounded-lg bg-surface-container text-secondary font-bold text-xs">' + p.rank + '</span>';
+    const natTag = p.nat === 'Indian'
+      ? '<span class="px-space-xs py-0.5 rounded bg-surface-container-high text-on-surface font-label-xs text-label-xs uppercase font-bold">IND</span>'
+      : '<span class="px-space-xs py-0.5 rounded bg-secondary-fixed/50 text-on-secondary-fixed font-label-xs text-label-xs uppercase font-bold">OS</span>';
+    let metrics = '';
+    if (currentCategory === 'batters') {
+      metrics = '<td class="py-3.5 px-space-md text-right font-mono font-medium text-secondary">' + p.balls + '</td>'
+        + '<td class="py-3.5 px-space-md text-right font-mono font-bold ' + (p.psr >= 200 ? 'text-primary' : 'text-on-surface') + '">' + p.psr.toFixed(1) + '</td>'
+        + '<td class="py-3.5 px-space-md text-right font-mono text-on-surface">' + p.boundary + '</td>'
+        + '<td class="py-3.5 px-space-md text-right font-mono text-secondary">' + p.pavg.toFixed(1) + '</td>';
+    } else {
+      metrics = '<td class="py-3.5 px-space-md text-right font-mono font-medium text-secondary">' + p.balls + '</td>'
+        + '<td class="py-3.5 px-space-md text-right font-mono font-bold ' + (p.econ < 7.5 ? 'text-primary' : 'text-on-surface') + '">' + p.econ.toFixed(2) + '</td>'
+        + '<td class="py-3.5 px-space-md text-right font-mono text-on-surface">' + p.dot + '</td>'
+        + '<td class="py-3.5 px-space-md text-right font-mono font-bold text-on-surface">' + p.wkts + '</td>';
+    }
+    return '<tr onclick="openPlayerDrawer(\'' + p.name.replace(/'/g,"\\'")+  '\')" class="group hover:bg-surface-container-low transition-colors cursor-pointer border-b border-surface-container-high/40">'
+      + '<td class="py-3.5 px-space-md whitespace-nowrap">' + rankBadge + '</td>'
+      + '<td class="py-3.5 px-space-md whitespace-nowrap"><div class="flex items-center gap-space-sm"><span class="font-title-sm text-title-sm font-bold text-on-surface group-hover:text-primary transition-colors">' + p.name + '</span>' + (p.rank === '01' ? '<span class="material-symbols-outlined text-primary text-[16px]">stars</span>' : '') + '</div></td>'
+      + '<td class="py-3.5 px-space-sm whitespace-nowrap">' + natTag + '</td>'
+      + '<td class="py-3.5 px-space-md whitespace-nowrap text-secondary font-medium">' + p.role + '</td>'
+      + metrics
+      + '<td class="py-3.5 px-space-md text-right font-mono font-semibold text-secondary">' + p.composite.toFixed(2) + '</td>'
+      + '<td class="py-3.5 px-space-md text-right whitespace-nowrap"><div class="inline-flex items-center justify-end gap-1.5 font-bold font-mono text-on-surface"><span class="' + (p.score >= 90 ? 'text-primary font-black' : '') + '">' + p.score.toFixed(2) + '</span><div class="w-12 h-1.5 rounded-full bg-surface-container-high overflow-hidden inline-block ml-1"><div class="h-full bg-primary" style="width:' + p.score + '%"></div></div></div></td>'
+      + '<td class="py-3.5 px-space-sm text-center"><span class="material-symbols-outlined text-secondary group-hover:text-primary text-[18px] transition-colors">chevron_right</span></td>'
+      + '</tr>';
+  }).join('');
+}
+
+function openPlayerDrawer(playerName) {
+  const all = [...battersData, ...bowlersData];
+  const p = all.find(x => x.name === playerName);
+  if (!p) return;
+  const isBatter = 'psr' in p;
+  document.getElementById('drawer-name').textContent = p.name;
+  document.getElementById('drawer-rank').textContent = 'Rank #' + p.rank;
+  document.getElementById('drawer-nat').textContent = p.nat;
+  document.getElementById('drawer-category-badge').textContent = isBatter ? 'Batter Target' : 'Bowler Target';
+  document.getElementById('drawer-role').textContent = p.role;
+  document.getElementById('drawer-score').innerHTML = p.score.toFixed(2) + ' <span class="text-xs font-bold text-secondary">/ 100</span>';
+  document.getElementById('drawer-composite').textContent = p.composite.toFixed(2);
+  document.getElementById('drawer-scout-notes').textContent = p.notes;
+  document.getElementById('drawer-calibration-bar').style.width = Math.min(p.score, 100) + '%';
+  document.getElementById('drawer-calibration-text').textContent = p.score >= 90 ? 'Top Tier Strategic Target' : 'Tactical Value Target';
+  const mc = document.getElementById('drawer-metrics-container');
+  if (isBatter) {
+    mc.innerHTML = '<div class="p-space-sm rounded-lg bg-surface-container-lowest shadow-xs"><div class="font-label-xs text-label-xs uppercase text-secondary font-bold">Pressure SR</div><div class="font-title-sm text-title-sm font-black text-primary mt-0.5">' + p.psr.toFixed(1) + '</div><div class="text-[10px] text-secondary">Balls > 12.0 RRR</div></div>'
+      + '<div class="p-space-sm rounded-lg bg-surface-container-lowest shadow-xs"><div class="font-label-xs text-label-xs uppercase text-secondary font-bold">Boundary %</div><div class="font-title-sm text-title-sm font-bold text-on-surface mt-0.5">' + p.boundary + '</div><div class="text-[10px] text-secondary">4s + 6s per balls faced</div></div>'
+      + '<div class="p-space-sm rounded-lg bg-surface-container-lowest shadow-xs"><div class="font-label-xs text-label-xs uppercase text-secondary font-bold">Pressure Avg</div><div class="font-title-sm text-title-sm font-bold text-on-surface mt-0.5">' + p.pavg.toFixed(1) + '</div><div class="text-[10px] text-secondary">Dismissal resistance</div></div>'
+      + '<div class="p-space-sm rounded-lg bg-surface-container-lowest shadow-xs"><div class="font-label-xs text-label-xs uppercase text-secondary font-bold">Pressure Sample</div><div class="font-title-sm text-title-sm font-bold text-on-surface mt-0.5">' + p.balls + ' Balls</div><div class="text-[10px] text-secondary">2022–2026 T20/IPL</div></div>';
+  } else {
+    mc.innerHTML = '<div class="p-space-sm rounded-lg bg-surface-container-lowest shadow-xs"><div class="font-label-xs text-label-xs uppercase text-secondary font-bold">Pressure Economy</div><div class="font-title-sm text-title-sm font-black text-primary mt-0.5">' + p.econ.toFixed(2) + '</div><div class="text-[10px] text-secondary">Death & Chase Overs</div></div>'
+      + '<div class="p-space-sm rounded-lg bg-surface-container-lowest shadow-xs"><div class="font-label-xs text-label-xs uppercase text-secondary font-bold">Dot Ball %</div><div class="font-title-sm text-title-sm font-bold text-on-surface mt-0.5">' + p.dot + '</div><div class="text-[10px] text-secondary">Pressure Choke Index</div></div>'
+      + '<div class="p-space-sm rounded-lg bg-surface-container-lowest shadow-xs"><div class="font-label-xs text-label-xs uppercase text-secondary font-bold">Pressure Scalps</div><div class="font-title-sm text-title-sm font-bold text-on-surface mt-0.5">' + p.wkts + ' Wkts</div><div class="text-[10px] text-secondary">High-leverage dismissals</div></div>'
+      + '<div class="p-space-sm rounded-lg bg-surface-container-lowest shadow-xs"><div class="font-label-xs text-label-xs uppercase text-secondary font-bold">Pressure Sample</div><div class="font-title-sm text-title-sm font-bold text-on-surface mt-0.5">' + p.balls + ' Balls</div><div class="text-[10px] text-secondary">2022–2026 T20/IPL</div></div>';
+  }
+  document.getElementById('drawer-backdrop').classList.remove('opacity-0','pointer-events-none');
+  document.getElementById('drawer-backdrop').classList.add('opacity-100');
+  document.getElementById('player-drawer').classList.remove('translate-x-full');
+}
+
+function closeDrawer() {
+  document.getElementById('drawer-backdrop').classList.add('opacity-0','pointer-events-none');
+  document.getElementById('drawer-backdrop').classList.remove('opacity-100');
+  document.getElementById('player-drawer').classList.add('translate-x-full');
+}
+
+// ==================== SQUAD INTELLIGENCE ====================
+const squadDataset = [
+  { name:'Rassie van der Dussen', role:'Middle-order Finisher (SA)', pressure:100.00, composite:94.95, status:'target' },
+  { name:'Matthew Humphreys', role:'Spinner / Finger (IRE)', pressure:100.00, composite:89.49, status:'target' },
+  { name:'Gerald Coetzee', role:'Overseas Pacer (SA)', pressure:98.00, composite:75.09, status:'target' },
+  { name:'Najibullah Zadran', role:'Lower-order Finisher (AFG)', pressure:97.67, composite:87.82, status:'target' },
+  { name:'Moeen Ali', role:'Middle-order / Spin (ENG)', pressure:95.33, composite:87.03, status:'target' },
+  { name:'Evin Lewis', role:'Opening Batter (WI)', pressure:93.00, composite:86.46, status:'target' },
+  { name:'Umran Malik', role:'Indian Express Pacer (IND)', pressure:92.00, composite:71.06, status:'target' },
+  { name:'Taskin Ahmed', role:'Overseas Pacer (BAN)', pressure:90.00, composite:69.84, status:'target' },
+  { name:'Barry McCarthy', role:'Pacer / All-rounder (IRE)', pressure:86.00, composite:68.03, status:'target' },
+  { name:'Dhruv Jurel', role:'Wicketkeeper / Finisher (IND)', pressure:85.59, composite:85.59, status:'retained' },
+  { name:'Shubham Dubey', role:'Indian Finisher (IND)', pressure:85.42, composite:85.42, status:'retained' },
+  { name:'Mark Chapman', role:'Top-order Batter (NZ)', pressure:81.33, composite:84.49, status:'target' },
+  { name:'Donovan Ferreira', role:'Middle-order Finisher (SA)', pressure:84.12, composite:84.12, status:'retained' },
+  { name:'Mark Adair', role:'Bowling All-rounder (IRE)', pressure:80.00, composite:63.10, status:'target' },
+  { name:'Mahipal Lomror', role:'Indian Finisher (IND)', pressure:79.00, composite:84.13, status:'target' },
+  { name:'Dasun Shanaka', role:'Bowling All-rounder (SL)', pressure:76.64, composite:76.64, status:'retained' },
+  { name:'Maheesh Theekshana', role:'Mystery Spinner (SL)', pressure:76.00, composite:59.61, status:'target' },
+  { name:'Sikandar Raza', role:'Spin All-rounder (ZIM)', pressure:72.00, composite:82.08, status:'target' },
+  { name:'Ravindra Jadeja', role:'Spin All-rounder (IND)', pressure:71.93, composite:71.93, status:'retained' },
+  { name:'Sean Abbott', role:'Pacer / Depth Batter (AUS)', pressure:70.00, composite:57.49, status:'target' },
+  { name:'Reeza Hendricks', role:'Opening Batter (SA)', pressure:69.67, composite:80.81, status:'target' },
+  { name:'Akash Madhwal', role:'Indian Death Pacer (IND)', pressure:68.00, composite:57.11, status:'target' },
+  { name:'Prashant Veer', role:'Emerging All-rounder', pressure:65.00, composite:77.08, status:'target' },
+  { name:'David Willey', role:'Left-arm Pacer (ENG)', pressure:64.00, composite:55.59, status:'target' },
+  { name:'Shimron Hetmyer', role:'Clutch Finisher (WI)', pressure:62.67, composite:76.71, status:'target' },
+  { name:'Mohammed Shami', role:'Indian Premier Pacer (IND)', pressure:59.26, composite:59.26, status:'retained' },
+  { name:'Jofra Archer', role:'Overseas Express Pacer (ENG)', pressure:58.79, composite:58.79, status:'retained' },
+  { name:'Riyan Parag', role:'Top-order Batter (IND)', pressure:55.99, composite:55.99, status:'retained' },
+  { name:'Yashasvi Jaiswal', role:'Opening Batter (IND)', pressure:48.20, composite:48.20, status:'retained' }
+];
+
+let lbFilter = 'all', lbSort = 'pressure', lbSearch = '';
+
+function renderLeaderboard() {
+  const body = document.getElementById('leaderboard-body');
+  const countLabel = document.getElementById('showing-count-label');
+  if (!body) return;
+  let filtered = squadDataset.filter(item => {
+    if (lbFilter === 'retained' && item.status !== 'retained') return false;
+    if (lbFilter === 'target' && item.status !== 'target') return false;
+    if (lbSearch) { const q = lbSearch.toLowerCase(); return item.name.toLowerCase().includes(q) || item.role.toLowerCase().includes(q); }
+    return true;
+  });
+  filtered.sort((a, b) => {
+    if (lbSort === 'composite') return b.composite - a.composite;
+    if (lbSort === 'name') return a.name.localeCompare(b.name);
+    return b.pressure - a.pressure;
+  });
+  body.innerHTML = filtered.map((p, idx) => {
+    const rankCls = idx < 3 ? 'text-primary font-bold' : 'text-secondary';
+    const isRet = p.status === 'retained';
+    const statusBadge = isRet
+      ? '<span class="inline-flex items-center gap-1 px-space-sm py-0.5 rounded font-label-xs text-label-xs font-bold uppercase bg-on-secondary-fixed text-on-primary"><span class="w-1.5 h-1.5 rounded-full bg-tertiary-fixed"></span>RETAINED</span>'
+      : '<span class="inline-flex items-center gap-1 px-space-sm py-0.5 rounded font-label-xs text-label-xs font-bold uppercase bg-primary text-on-primary"><span class="w-1.5 h-1.5 rounded-full bg-surface-container-lowest"></span>AUCTION TARGET</span>';
+    return '<tr class="hover:bg-surface-container-low/60 transition-colors">'
+      + '<td class="py-space-md px-space-md text-center font-mono font-bold ' + rankCls + '">#' + (idx+1) + '</td>'
+      + '<td class="py-space-md px-space-lg font-title-sm text-title-sm font-bold text-on-surface"><div class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full ' + (isRet ? 'bg-on-secondary-fixed' : 'bg-primary') + '"></span>' + p.name + '</div></td>'
+      + '<td class="py-space-md px-space-md font-body-md text-secondary">' + p.role + '</td>'
+      + '<td class="py-space-md px-space-md text-right font-mono font-bold ' + (p.pressure >= 90 ? 'text-primary' : 'text-on-surface') + '">' + p.pressure.toFixed(2) + '</td>'
+      + '<td class="py-space-md px-space-md text-right font-mono font-semibold text-secondary">' + p.composite.toFixed(2) + '</td>'
+      + '<td class="py-space-md px-space-lg text-right">' + statusBadge + '</td>'
+      + '</tr>';
+  }).join('');
+  if (countLabel) countLabel.textContent = 'Showing ' + filtered.length + ' of ' + squadDataset.length + ' players';
+}
+
+// ==================== INIT ====================
+window.addEventListener('DOMContentLoaded', () => {
+  applyFilters();
+  renderLeaderboard();
+
+  // Squad retained tabs
+  const tbb = document.getElementById('tab-batters-btn');
+  const tbob = document.getElementById('tab-bowlers-btn');
+  const pbat = document.getElementById('retained-batters-panel');
+  const pbowl = document.getElementById('retained-bowlers-panel');
+  if (tbb && tbob && pbat && pbowl) {
+    tbb.addEventListener('click', () => {
+      tbb.classList.add('bg-primary','text-on-primary','shadow-sm'); tbb.classList.remove('text-secondary','hover:text-on-surface');
+      tbob.classList.remove('bg-primary','text-on-primary','shadow-sm'); tbob.classList.add('text-secondary','hover:text-on-surface');
+      pbat.classList.remove('hidden'); pbowl.classList.add('hidden');
+    });
+    tbob.addEventListener('click', () => {
+      tbob.classList.add('bg-primary','text-on-primary','shadow-sm'); tbob.classList.remove('text-secondary','hover:text-on-surface');
+      tbb.classList.remove('bg-primary','text-on-primary','shadow-sm'); tbb.classList.add('text-secondary','hover:text-on-surface');
+      pbowl.classList.remove('hidden'); pbat.classList.add('hidden');
+    });
+  }
+
+  // Accordion
+  const accBtn = document.getElementById('accordion-toggle-btn');
+  const accContent = document.getElementById('accordion-content');
+  const accChevron = document.getElementById('accordion-chevron');
+  const accStatus = document.getElementById('accordion-status-label');
+  if (accBtn && accContent) {
+    accBtn.addEventListener('click', () => {
+      const isOpen = !accContent.classList.contains('hidden');
+      if (isOpen) { accContent.classList.add('hidden'); accChevron.style.transform='rotate(0deg)'; if(accStatus) accStatus.textContent='Click to Expand'; }
+      else { accContent.classList.remove('hidden'); accChevron.style.transform='rotate(180deg)'; if(accStatus) accStatus.textContent='Click to Collapse'; }
+    });
+  }
+
+  // Leaderboard search
+  const lbSearchEl = document.getElementById('leaderboard-search');
+  if (lbSearchEl) lbSearchEl.addEventListener('input', e => { lbSearch = e.target.value.trim(); renderLeaderboard(); });
+
+  // Leaderboard sort
+  const lbSortEl = document.getElementById('leaderboard-sort');
+  if (lbSortEl) lbSortEl.addEventListener('change', e => { lbSort = e.target.value; renderLeaderboard(); });
+
+  // Leaderboard filter pills
+  document.querySelectorAll('.filter-pill-btn').forEach(pill => {
+    pill.addEventListener('click', () => {
+      document.querySelectorAll('.filter-pill-btn').forEach(p => { p.classList.remove('bg-on-secondary-fixed','text-on-primary'); p.classList.add('text-secondary','hover:text-on-surface'); });
+      pill.classList.add('bg-on-secondary-fixed','text-on-primary'); pill.classList.remove('text-secondary','hover:text-on-surface');
+      lbFilter = pill.getAttribute('data-filter');
+      renderLeaderboard();
+    });
+  });
+});
+</script>
+</body>
+</html>
+
